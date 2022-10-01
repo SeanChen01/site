@@ -1,206 +1,35 @@
-<!DOCTYPE html>
-<html lang="zh_TW">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="format-detection" content="telephone=no" />
-    <title>login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>caas</title>
+    <link rel="shortcut icon" href="inc/img/favicon.ico">
+    <!-- 共用JS star -->
+    <script type="text/javascript" src="inc/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="inc/lib/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="../libray/jquery/jquery-3.3.1.min.js"></script>
-    <script src="../libray/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/base.js"></script>
+    <link rel="stylesheet" type="text/css" href="inc/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="inc/css/base.css">
 
-    <link rel="stylesheet" href="src/main/webapp/library/bootstrap/css/bootstrap.min.css" /> <!-- bootstrap -->
-    <link rel="stylesheet" href="src/main/webapp/library/lib-common/css-lib/css-lib-common.css" /> <!-- reset css -->
-    <link rel="stylesheet" href="src/main/webapp/library/icomoon/style.css" /> <!-- all icon -->
-    <link rel="stylesheet" href="src/main/webapp/src-login/login-css/login.css" />
 </head>
 
-<body class="page-web">
-    <div class="page-wrapper">
-        <div class="page-body">
-            <div class="card shadow">
-                <div class="card-header">
-                    <h4 class="mb-0">All Platform & MPS Site</h4>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-4">
-                            <a href="src/main/webapp/src-banner/index.html" class="btn">src-banner</a>
-                        </div>
-                        <div class="col-8">
-                            <a href="src/main/webapp/src-banner/index-MPS-site.html" class="btn">PL/AG Site</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card my-3 shadow">
-                <div class="card-header">
-                    <h4 class="mb-0">GameHall</h4>
-                </div>
-                <div class="card-body">
-                    <div class="card-deck">
-                        
-
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0 pb-2 border-bottom">Mobile gameHall</h5>
-                                <small class="text-muted">標準版 / RWD / PC dashboard</small>
-                                <div class="container p-0">
-                                    <a href="src/main/webapp/src-gamehall/index.html" class="btn">src-gamehall</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-body">
-                              <h5 class="card-title mb-0 pb-2 border-bottom">Mobile Old gameHall</h5>
-                              <small class="text-muted ">標準版 / 客製版</small>
-                              <div class="container p-0">
-                                <div class="row mb-2 justify-content-between">
-                                    <div class="col-3 pr-0">
-                                        <span class="badge badge-primary">default</span>
-                                    </div>
-                                    <div class="col">
-                                        <a href="src/main/webapp/game-hall-M/index-gamehall.html" class="btn">game-hall-M</a>
-                                        <a href="src/main/webapp/game-hall-M/index_iframe_outstanding.html" class="btn">Outstanding</a>
-                                        <a href="src/main/webapp/game-hall-M/index_iframe.html" class="btn">iframe</a>
-                                        <a href="src/main/webapp/game-hall-M/index_loading.html" class="btn">loading</a>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-between">
-                                    <div class="col-3 pr-0">
-                                        <span class="badge badge-info">TMT</span>
-                                    </div>
-                                    <div class="col">
-                                        <a href="src/main/webapp/game-hall-M/index-gamehall-TMT.html" class="btn">index</a>
-                                        <a href="src/main/webapp/game-hall-M/gamehall-live-TMT.html" class="btn">live</a>
-                                        <a href="src/main/webapp/game-hall-M/submenu-TMT.html" class="btn">slot</a>
-                                        <a href="src/main/webapp/game-hall-M/index_iframe-TMT.html" class="btn">iframe</a>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-between">
-                                    <div class="col-3 pr-0">
-                                        <span class="badge badge-info">EXTREME88</span>
-                                    </div>
-                                    <div class="col">
-                                        <a href="src/main/webapp/game-hall-M/mb-EXTREME88.html" class="btn">index</a>
-                                        <a href="src/main/webapp/game-hall-M/mb-live-EXTREME88.html" class="btn">live</a>
-                                        <a href="src/main/webapp/game-hall-M/mb-slot-EXTREME88.html" class="btn">slot</a>
-                                        <a href="src/main/webapp/game-hall-M/mb-iframe-EXTREME88.html" class="btn">iframe</a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0 pb-2 border-bottom">PC</h5>
-                                <small class="text-muted">標準版 / 客製版</small>
-                                <div class="container p-0">
-                                    <div class="row mb-2">
-                                        <div class="col-2 pr-0">
-                                            <span class="badge badge-primary">default</span>
-                                        </div>
-                                        <div class="col">
-                                            <a href="src/main/webapp/game-hall-PC/index.html" class="btn">game-hall</a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 pr-0">
-                                            <span class="badge badge-info">客製版</span>
-                                        </div>
-                                        <div class="col-9">
-                                            <a href="src/main/webapp/game-hall-PC/index-TMT.html" class="btn">TMT</a>
-                                            <a href="src/main/webapp/game-hall-PC/index-KING88.html" class="btn">KING88</a>
-                                            <a href="src/main/webapp/game-hall-PC/index-MWCASH.html" class="btn">MWCASH</a>
-                                            <a href="src/main/webapp/game-hall-PC/index-SPINBREAK.html" class="btn">SPINBREAK</a>
-                                            <!-- <a href="src/main/webapp/game-hall-PC/index-DDWIN.html" class="btn">DDWIN</a> -->
-                                            <!-- <a href="src/main/webapp/game-hall-PC/index-ALO789.html" class="btn">ALO789</a> -->
-                                            <!-- <a href="src/main/webapp/game-hall-PC/index-CHON899.html" class="btn">CHON899</a> -->
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 pr-0">
-                                            <span class="badge badge-light border">客製版<br>(淺色系)</span>
-                                        </div>
-                                        <div class="col-9">
-                                            <a href="src/main/webapp/game-hall-PC/index-MWGAMING.html" class="btn">MWGAMING</a>
-                                            <a href="src/main/webapp/game-hall-PC/index-EXTREME88.html" class="btn">EXTREME88</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow">
-                <div class="card-header">
-                    <h4 class="mb-0">共用頁面</h4>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-4 pr-0">
-                            Bonus Event
-                        </div>
-                        <div class="col">
-                            <a href="src/main/webapp/library/lib-common/html/game-promote/bonus-iframe-Roulette.html" class="btn">Roulette</a><br>
-                            <a href="src/main/webapp/library/lib-common/html/game-promote/bonus-iframe-FACHAI.html" class="btn">Raffle-V1</a>
-                            <a href="src/main/webapp/library/lib-common/html/game-promote/bonus-iframe-Raffle.html" class="btn">Raffle-V2</a>
-                            <a href="src/main/webapp/library/lib-common/html/game-promote/bonus-iframe-Raffle-V2.html" class="btn">Raffle-V3</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 pr-0">
-                            Tournament
-                        </div>
-                        <div class="col">
-                            
-                            <a href="src/main/webapp/src-gamehall/html/demo_iframe/tournament.html" class="btn">Monthly</a>
-                            <a href="src/main/webapp/src-gamehall/html/demo_iframe/tournament-weekly.html" class="btn">Weekly</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mt-3 shadow">
-                <div class="card-header">
-                    <h4 class="mb-0">Login & Player report</h4>
-                </div>
-                <div class="card-body">
-                    <div class="row mb-2">
-                        <div class="col-4 pr-0">
-                            <a href="src/main/webapp/src-login/index.html" class="btn">src-login</a>
-                        </div>
-                        <div class="col-8">
-                            <a href="src/main/webapp/src-function/index.html" class="btn">src-function</a>
-                            <a href="src/main/webapp/form_password/form_EN.html" class="btn">password</a>
-                            <a href="src/main/webapp/src-function/html/member/form_P2P.html" class="btn">P2P Transfer</a>
-                            <a href="src/main/webapp/src-function/html/member/receive_P2P.html" class="btn">P2P Receive</a>
-                        </div>
-                    </div>
-
-
-                    
-                </div>
-            </div>
-
+<body class="page">
+    <div class="page-content">
+        <header class="page-header">
+            <img src="/inc/img/layout/logo.png" alt="">
+        </header>
+        <content class="page-body">
             
+        </content>
+        <footer class="page-footer">
 
-            <div class="card my-3 shadow">
-                <div class="card-header">
-                    <h4 class="mb-0">New CockFight</h4>
-                </div>
-                <div class="card-body">
-                    <a href="src/main/webapp/src-ICF/index.html" class="btn">src-ICF</a>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+        </footer>
+
+    </div><!-- /page-content -->
 </body>
-
-</html>

@@ -1,0 +1,46 @@
+.page
+    // &::before
+    //     content: ''
+    //     position: absolute
+    //     width: 100%
+    //     height: 4px
+    //     display: block
+    //     @include mainGradient(left, right, $primary-color, #77cf20)
+    background-color: #f1f1f1
+    .page-wrapper
+        position: relative
+        margin: 0 auto
+        max-width: 1000px
+    
+    .page-header
+        background-color: #fff
+        height: auto
+        width: 100%
+        padding: 0
+        margin: 0
+        display: block
+        color: #444
+        border-bottom: 1px solid #ddd
+        .page-title
+            font-size: 130%
+            font-weight: bold
+            text-align: center
+            padding: 13px 30px
+            margin: 0
+        a 
+            color: $primary-color
+        .page-header-lt,.page-header-rt
+            display: inline-block
+            min-width: 50px
+            top: 0px
+            left: 0px
+            height: 100%
+            position: absolute
+            line-height: 50px
+        .page-header-rt
+            left: auto
+            right: 0
+    .page-body
+        @include phone-S
+            padding: 10px 10px 75px 10px
+    .page-footer
