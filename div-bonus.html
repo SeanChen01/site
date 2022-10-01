@@ -1,0 +1,169 @@
+<!-- <script src="../library/owlcarousel/js/owl.carousel.min.js"></script> -->
+<div class="page-bonus-header">
+    <div class="header-lt">
+        <a class="btn" href="#">
+            <i class="icon-arrow-back-outline"></i>
+        </a>
+        <span class="img-platform-logo">
+            <i class="icon-FACHAI"></i>
+        </span>
+        <span class="txt-date">12/01 12:00 PM - 12/31 12:00 PM</span>
+    </div>
+</div>
+<div class="page-bonus-body">
+    <div class="bonus-result">
+        <div class="bonus-result-txt">
+
+            <!-- result-box -->
+            <div class="result-box default">
+                <div class="tit">TOTAL BONUS</div>
+                <div class="txt-number">
+                    <sup>$</sup>
+                    1,000.00
+                </div>
+                <div class="bonus-img"></div>
+            </div>
+
+            <div class="result-box win">
+                <div class="tit">CONGRATULATIONS!</div>
+                <div class="txt-number">
+                    <sup>$</sup>
+                    1,000
+                </div>
+                <div class="bonus-img"></div>
+            </div>
+
+            <div class="result-box no-win">
+                <!-- <div class="tit">No Prize.
+                    Try next tiet and win the prize!</div> -->
+                <div class="txt-number">
+                    <sup>$</sup>
+                    0
+                </div>
+                <div class="bonus-img"></div>
+            </div>
+            <!-- result-box -->
+            
+            <div class="bonus-result-btn">
+                <!-- 資格不符時 加上disabled -->
+                <a class="bonus-btn" href="javascript:void(0);">
+                    <i class="icon-ticket"></i>
+                    3
+                </a>
+                <!-- btn-tooltip 原本在這 -->
+            </div>
+        </div>
+    </div>
+    <div class="bonus-time">
+        <div class="txt">
+            <!-- <i class="icon-clock"></i> -->
+            Today 22：34：18
+        </div>
+        <a class="btn-tooltip" href="javascript:void(0);">
+            <i class="icon-alert-circle"></i>
+            <div class="tooltip-box">
+                <ul class="list-dot">
+                    <li>Tickets will be issued at 01:00</li>
+                    <li>Tickets must use before 13/12/2021 12:00 (PM)</li>
+                </ul>
+            </div>
+        </a>
+        <!-- <small>12/01 00:00 - 12/31 23:59 (GMT+8)</small> -->
+    </div>
+    <ul class="owl-bonus">
+        <li class="item show-maintain checked">
+            <img class="game-icon" src="../theme/images/gameIcon/FACHAI/MoneyTreeDozer.jpg">
+            <span class="show-maintain"></span>
+        </li>
+        <li class="item show-maintain uncheck">
+            <img class="game-icon" src="../theme/images/gameIcon/FACHAI/AnimalRacing.jpg">
+            <span class="show-maintain"></span>
+        </li>
+        <li class="item uncheck">
+            <img class="game-icon" src="../theme/images/gameIcon/FACHAI/MoneyTreeDozer.jpg">
+            <span class="show-maintain"></span>
+        </li>
+        <li class="item">
+            <img class="game-icon" src="../theme/images/gameIcon/FACHAI/BaoChuanFishing.jpg">
+            <span class="show-maintain"></span>
+        </li>
+        <li class="item">
+            <img class="game-icon" src="../theme/images/gameIcon/FACHAI/ChineseNewYear.jpg">
+            <span class="show-maintain"></span>
+        </li>
+        <li class="item">
+            <img class="game-icon" src="../theme/images/gameIcon/FACHAI/CircusDozer.jpg">
+            <span class="show-maintain"></span>
+        </li>
+        <li class="item">
+            <img class="game-icon" src="../theme/images/gameIcon/FACHAI/Cowboys.jpg">
+            <span class="show-maintain"></span>
+        </li>
+        <li class="item">
+            <img class="game-icon" src="../theme/images/gameIcon/FACHAI/DaLeMen.jpg">
+            <span class="show-maintain"></span>
+        </li>
+    </ul>
+
+    <div class="info-box">
+        <div class="ticket-box">
+            <!-- <div class="txt-number">+1</div> -->
+            <ul>
+                <li>
+                    <i class="icon-checked"></i>
+                    Must bet 8 games
+                </li>
+                <li>Bet <strong>5,000</strong> can get <strong>1 ticket</strong>. </li>
+                <li>One player max 100 tickets</li>
+            </ul>
+        </div>
+        <!-- <ul class="list-dot">
+            <li>Bet 5,000 can get 1 ticket</li>
+            <li></li>
+        </ul> -->
+        <div class="demolink">
+            <a class="demo-win" href="javascript:void(0);">中獎</a>
+            <a class="demo-no-win" href="javascript:void(0);">未中獎</a>
+            <a class="demo-no-ticket" href="javascript:void(0);">按鈕不能點擊</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(window).ready(function() {
+        $('.page-bonus-div .header-lt .btn').on('click', function () {
+            $('.page-bonus-div').removeClass('active');
+            $('.page-web').removeClass('modal-open');
+        });
+        $('.result-box.win,.result-box.no-win').hide();
+
+        $('.demo-win').on('click', function () {
+            $('.bonus-btn').removeClass('disabled');
+            $('.bonus-img').addClass('jello-horizontal ');
+            $('.result-box').hide();
+            $('.result-box.win').show();
+        });
+        $('.demo-no-win').on('click', function () {
+            $('.bonus-btn').removeClass('disabled');
+            $('.result-box').hide();
+            $('.result-box.no-win').show();
+        });
+        $('.demo-no-ticket').on('click', function () {
+            $('.bonus-btn').addClass('disabled');
+        });
+
+
+    });
+    // $('.owl-carousel.owl-bonus').owlCarousel({
+	// 	autoplay: true,
+	// 	loop: true,
+	// 	center: true,
+	// 	mergeFit: true,
+	// 	startPosition: 0,
+	// 	nav: true,
+    //     navText: ["<i class='icon-arrow-left'></i>","<i class='icon-arrow-right'></i>"],
+	// 	dots: true,
+	// 	items: 1
+	// });
+    
+</script>
