@@ -1,7 +1,173 @@
-header {
-  background: #333;
-  display: block;
-  height: 50px;
-  width: 100%;
+:root {
+  --error: #b84139;
+  --soft-green: #59807f;
+  --dark-black: #222;
+  --dark-green: #30504f;
+  --overlay: rgba(0, 0, 0, 0.7);
+  --yellow: #ffe32b;
+  --light-green: #39b8b0;
+  --white: #fff;
+  --dark-gray: #8b8b8b;
+  --status-field: #eff8f7;
+  --status-field-error: #f9f1f0;
+  --support-background: #fbfbfb;
+  --gray-b: #d1d1d1;
+  --header-height: 70px;
+  --font-size-button: 15px;
+  --font-size-minimum: 12px;
+  --font-size-menu: 15px;
+  --box-shadow-light: 2px 5px 10px rgba(0, 0, 0, 0.11764705882352941);
+  --page-max-container: 1366px;
+  --border-radius: 5px;
 }
-/*# sourceMappingURL=base.css.map */
+
+.page-header {
+  position: relative;
+}
+
+header.f-header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 4.3vw;
+  height: 75px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: #222;
+  z-index: 20;
+  font-size: 15px;
+  font-weight: 500;
+}
+header.f-header .f-left-panel {
+  display: flex;
+  align-items: center;
+}
+header.f-header .f-left-panel .f-left-logo-area {
+  display: flex;
+  align-items: center;
+}
+header.f-header .f-left-panel .f-left-logo-area img.f-logo {
+  width: 33px;
+  height: 24px;
+  margin-right: 0.8rem;
+}
+header.f-header .f-left-panel .f-left-logo-area span {
+  font-family: Sarabun;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #30504f;
+}
+header.f-header .f-left-panel .f-nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+header.f-header .f-left-panel .f-nav ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+  width: auto;
+  margin-left: 0;
+  color: #30504f;
+  align-self: center;
+}
+header.f-header .f-left-panel .f-nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
+header.f-header .f-left-panel .f-nav ul li.active a:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #30504f;
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+}
+header.f-header .f-left-panel .f-nav ul li ul {
+  display: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  list-style: none;
+  width: 156px;
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  background-color: #fff;
+}
+header.f-header .f-left-panel .f-nav ul li:hover ul {
+  display: block;
+}
+header.f-header .f-left-panel .f-nav ul li:hover ul li {
+  padding: 10px;
+  color: #222;
+  text-align: left;
+}
+header.f-header .f-left-panel .f-nav ul li:hover ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+header.f-header .f-left-panel .f-nav ul li:hover ul li:hover {
+  color: #30504f;
+  background-color: #eff8f7;
+}
+header.f-header .f-desktop-right-panel {
+  display: flex;
+  align-items: center;
+}
+header.f-header .f-desktop-right-panel .f-header-tracking-list {
+  display: flex;
+  align-items: unset;
+  cursor: pointer;
+  min-width: 85px;
+}
+header.f-header .f-desktop-right-panel .f-header-tracking-list svg {
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+  color: var(--light-green);
+  margin-bottom: -1px;
+}
+header.f-header .f-desktop-right-panel button.f-btn {
+  height: 46px;
+  border: 0;
+  width: 135px;
+  outline: none;
+  border-radius: 2px;
+  font-size: var(--font-size-body-3);
+  cursor: pointer;
+  background-color: var(--dark-black);
+  border: 1px solid var(--dark-black);
+  color: #fff;
+}
+header.f-header .f-moblie-right-panel,
+header.f-header .f-mobile-sidebar,
+header.f-header .f-sidebar-backdrop {
+  display: none;
+}
+
+* {
+  font-family: Roboto, Noto Sans TC, arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: #fbfbfb;
+}
+
+.page-foote {
+  display: none;
+}

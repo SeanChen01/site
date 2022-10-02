@@ -1,5 +1,4 @@
 $(window).ready(function() {
-    // tooltip_input();
-    // tooltip_rememberMe();
-    // ad_owl();
+    $(".page-header").load("html/page-header.html");
+    $(".page-footer").load("html/page-footer.html");
 });

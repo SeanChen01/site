@@ -1,0 +1,122 @@
+.page-header
+    position: relative
+header.f-header
+    position: fixed
+    top: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    padding: 0 4.3vw
+    height: 75px
+    line-height: 1.2
+    letter-spacing: .5px
+    color: #222
+    z-index: 20
+    font-size: 15px
+    font-weight: 500
+    .f-left-panel
+        display: flex
+        align-items: center
+        .f-left-logo-area
+            display: flex
+            align-items: center
+            img.f-logo
+                width: 33px
+                height: 24px
+                margin-right: 0.8rem
+            span
+                font-family: Sarabun
+                font-size: 24px
+                font-weight: 500
+                letter-spacing: 2px
+                text-align: left
+                color: #30504f
+        .f-nav
+            ul
+                display: flex
+                justify-content: center
+                margin: 0
+                padding: 0 
+                li
+                    position: relative
+                    list-style: none
+                    text-align: center
+                    padding: 1rem
+                    width: auto
+                    margin-left: 0
+                    color: #30504f
+                    align-self: center
+                    a
+                        position: relative
+                        text-decoration: none
+                        color: inherit
+                        white-space: nowrap
+                    &.active
+                        a:before
+                            content: ""
+                            width: 100%
+                            height: 2px
+                            background-color: #30504f
+                            position: absolute
+                            bottom: -13px
+                            left: 0
+                    // -----------
+                    ul
+                        display: none
+                        -webkit-padding-start: 0
+                        padding-inline-start: 0
+                        list-style: none
+                        width: 156px
+                        position: absolute
+                        top: 49px
+                        left: 50%
+                        transform: translateX(-50%)
+                        font-size: 14px
+                        line-height: 1.5
+                        letter-spacing: .5px
+                        background-color: #fff
+                    &:hover
+                        ul
+                            display: block
+                            li
+                                padding: 10px
+                                color: #222
+                                text-align: left
+                                a
+                                    color: inherit
+                                    text-decoration: none
+                                &:hover
+                                    color: #30504f
+                                    background-color: #eff8f7
+                                    
+    .f-desktop-right-panel
+        display: flex
+        align-items: center
+        .f-header-tracking-list
+            display: flex
+            align-items: unset
+            cursor: pointer
+            min-width: 85px
+            svg
+                height: 15px
+                width: 15px
+                margin-right: 8px
+                color: var(--light-green)
+                margin-bottom: -1px
+            // .f-i-love
+        button.f-btn
+            height: 46px
+            border: 0
+            width: 135px
+            outline: none
+            border-radius: 2px
+            font-size: var(--font-size-body-3)
+            cursor: pointer
+            background-color: var(--dark-black)
+            border: 1px solid var(--dark-black)
+            color: #fff
+    .f-moblie-right-panel,
+    .f-mobile-sidebar,
+    .f-sidebar-backdrop
+        display: none
