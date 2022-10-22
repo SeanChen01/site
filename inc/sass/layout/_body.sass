@@ -22,6 +22,19 @@
 .page
 	.page-body
 		padding-top: 75px
+		// ================
+		.list-box
+			color: var(--dark-gray)
+			.tit
+			.list-num
+				list-style: decimal
+				li
+					&::before
+						display: none
+					line-height: normal
+					font-size: 15px
+					line-height: 26px
+		// ================
 		.section-tit
 			font-size: 30px
 			font-weight: bold
@@ -35,19 +48,33 @@
 			font-size: 15px
 			color: var(--dark-gray)
 			line-height: 26px
+			&.ct
+				text-align: center
+		.section-con
+			max-width: 1200px
+			margin: auto
 		.btn-box
-			padding: 20px 0
+			padding: 70px 0
+			width: 100%
+			text-align: center
 			.btn
 				color: #fff
 				background-color: var(--light-green)
+				border: 2px solid var(--light-green)
 				border-radius: 100px
 				font-size: 90%
 				line-height: 40px
-				padding: 0 10px
+				padding: 2px 10px
 				min-width: 200px
-				margin-right: 10px
+				margin-right: 40px
 				&.btn-style-2
 					background-color: var(--dark-green)
+					border: 2px solid var(--dark-green)
+					&:hover
+						color: var(--dark-green)
+				&:hover
+					background-color: #fff
+					color: var(--light-green)
 		// ==========================
 		.section-box
 			min-height: calc( 100vh - 75px )
@@ -70,10 +97,9 @@
 			// section-02
 			&.section-02
 				background: var(--status-field-b)
-				padding: 10vh 0 10vh 0
-				min-height: auto
+				padding: 15vh 0 15vh 0
 				.section-tit.ct
-					padding: 0 0 10px 0
+					padding: 0 0 50px 0
 				.section-con
 					display: flex
 					justify-content: center
@@ -86,8 +112,8 @@
 						.tit
 							font-size: 20px
 							margin-bottom: 20px
-						.txt
-							
+							color: var(--dark-green)
+							font-weight: bold
 						&.part-1
 							background: url(../../inc/img/layout/section/section-02-01.png) no-repeat center top
 							background-size: 130px
@@ -102,3 +128,193 @@
 			&.section-03
 				padding: 10vh 0 10vh 0
 				min-height: auto
+				.section-con
+					padding-top: 20px
+					.section-img
+						margin: 0 auto 20px auto
+						width: 100%
+						max-width: 1000px
+						height: 500px
+						background: url(../../inc/img/layout/section/section-03.png) no-repeat center center
+						background-size: 100%
+					.txt
+						margin: 0 auto
+						max-width: 1024px
+			// -------------------------
+			// section-04
+			&.section-04
+				background: var(--status-field-b)
+				padding: 15vh 0 10vh 0
+				.section-tit.ct
+					padding: 0 0 50px 0
+				.section-con
+					position: relative
+					height: 100%
+					&::before
+						position: absolute
+						right: 10%
+						top: 20%
+						content: ''
+						display: inline-block
+						width: 500px
+						height: 800px
+						background: url(../../inc/img/logo/logo-only.png) no-repeat center top
+						background-size: 100%
+						opacity: .2
+						z-index: 0
+					ul
+						position: relative
+						z-index: 10
+						max-width: 1200px
+						margin: 0 auto
+						display: grid
+						grid-template-columns: 50% 50%
+						li
+							padding-left: 130px
+							margin-bottom: 30px
+							min-height: 120px
+							display: flex
+							flex-direction: column
+							align-items: left
+							.tit
+								padding-top: 25px
+								font-size: 20px
+								color: var(--dark-green)
+								font-weight: bold
+							&.part-1
+								background: url(../../inc/img/layout/section/section-04-01.png) no-repeat center left
+								background-size: 120px
+							&.part-2
+								background: url(../../inc/img/layout/section/section-04-02.png) no-repeat center left
+								background-size: 120px
+							&.part-3
+								background: url(../../inc/img/layout/section/section-04-03.png) no-repeat center left
+								background-size: 120px
+							&.part-4
+								background: url(../../inc/img/layout/section/section-04-04.png) no-repeat center left
+								background-size: 120px
+							&.part-5
+								background: url(../../inc/img/layout/section/section-04-05.png) no-repeat center left
+								background-size: 120px
+			// -------------------------
+			// section-05
+			&.section-05
+				padding: 6vh 0 3vh 0
+				min-height: auto
+				.section-con
+					padding-top: 30px
+					.btn-box
+						margin-bottom: 0
+					ul.section-ul
+						display: flex
+						li
+							width: 20%
+							position: relative
+							z-index: 10
+							text-align: center
+							&::before
+								z-index: -1
+								position: absolute
+								top: 0
+								left: 50%
+								transform: translateX(-50%)
+								content: ''
+								width: 230px
+								height: 80px
+								background: var(--light-green)
+								clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%)
+							.tit
+								margin: 0 auto 30px auto
+								width: 60%
+								height: 80px
+								line-height: 70px
+								color: #fff
+								font-weight: bold
+								small
+									top: 50px
+									line-height: normal
+									position: absolute
+									left: 50%
+									transform: translateX(-50%)
+									display: block
+									font-size: 80%
+							.txt
+								span
+									display: block
+									line-height: 40px
+								.txt-info
+									display: block
+									color: var(--light-green)
+							// ===============
+							&.part-1
+								&::before
+									background-color: #b2e7e3
+								.tit
+									background: url(../../inc/img/logo/Default.svg) no-repeat center center
+									background-size: 100%
+							// ===============
+							&.part-4
+								&::before
+									background-color: var(--soft-green)
+							// ===============
+							&.part-5
+								.txt
+									color: var(--light-green)
+									span
+										line-height: 26px
+					.txt
+						margin: 0 auto
+						max-width: 1024px
+			// -------------------------
+			// section-06
+			&.section-06
+				padding: 4vh 0 0vh 0
+				background: var(--status-field-b)
+				.section-con
+					padding: 0
+					text-align: center
+					li
+						position: relative
+						background: url(../../inc/img/layout/section/section-06.png) no-repeat center center
+						background-size: 100%
+						min-height: 160px
+						width: 900px
+						margin: 0 auto
+						.txt-step
+							position: absolute
+							left: 45px
+							top: 40px
+							font-weight: bold
+							color: #fff
+							font-size: 20px
+						.tit
+							padding: 35px 0 10px 180px
+							text-align: left
+							font-weight: bold
+							font-size: 20px
+							i
+								margin-right: 5px
+						.txt
+							padding: 0 0 10px 180px
+							text-align: left
+			// -------------------------
+			// section-07
+			&.section-07
+				padding: 10vh 0 3vh 0
+				min-height: auto
+				.section-tit
+					margin-bottom: 50px
+				.section-con
+					.txt
+						max-width: 1000px
+						text-align: center
+						margin: 0 auto 20px auto
+					.section-img
+						margin: 0 auto 0 auto
+						width: 100%
+						max-width: 1000px
+						height: 300px
+						background: url(../../inc/img/layout/section/section-07.png) no-repeat center center
+						background-size: 100%
+					.btn-box
+						padding: 40px 0

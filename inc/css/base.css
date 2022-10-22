@@ -207,6 +207,20 @@ header.f-header .f-sidebar-backdrop {
 .page .page-body {
   padding-top: 75px;
 }
+.page .page-body .list-box {
+  color: var(--dark-gray);
+}
+.page .page-body .list-box .list-num {
+  list-style: decimal;
+}
+.page .page-body .list-box .list-num li {
+  line-height: normal;
+  font-size: 15px;
+  line-height: 26px;
+}
+.page .page-body .list-box .list-num li::before {
+  display: none;
+}
 .page .page-body .section-tit {
   font-size: 30px;
   font-weight: bold;
@@ -223,21 +237,39 @@ header.f-header .f-sidebar-backdrop {
   color: var(--dark-gray);
   line-height: 26px;
 }
+.page .page-body .txt.ct {
+  text-align: center;
+}
+.page .page-body .section-con {
+  max-width: 1200px;
+  margin: auto;
+}
 .page .page-body .btn-box {
-  padding: 20px 0;
+  padding: 70px 0;
+  width: 100%;
+  text-align: center;
 }
 .page .page-body .btn-box .btn {
   color: #fff;
   background-color: var(--light-green);
+  border: 2px solid var(--light-green);
   border-radius: 100px;
   font-size: 90%;
   line-height: 40px;
-  padding: 0 10px;
+  padding: 2px 10px;
   min-width: 200px;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 .page .page-body .btn-box .btn.btn-style-2 {
   background-color: var(--dark-green);
+  border: 2px solid var(--dark-green);
+}
+.page .page-body .btn-box .btn.btn-style-2:hover {
+  color: var(--dark-green);
+}
+.page .page-body .btn-box .btn:hover {
+  background-color: #fff;
+  color: var(--light-green);
 }
 .page .page-body .section-box {
   min-height: calc(100vh - 75px);
@@ -260,11 +292,10 @@ header.f-header .f-sidebar-backdrop {
 }
 .page .page-body .section-box.section-02 {
   background: var(--status-field-b);
-  padding: 10vh 0 10vh 0;
-  min-height: auto;
+  padding: 15vh 0 15vh 0;
 }
 .page .page-body .section-box.section-02 .section-tit.ct {
-  padding: 0 0 10px 0;
+  padding: 0 0 50px 0;
 }
 .page .page-body .section-box.section-02 .section-con {
   display: flex;
@@ -280,6 +311,8 @@ header.f-header .f-sidebar-backdrop {
 .page .page-body .section-box.section-02 .section-con li .tit {
   font-size: 20px;
   margin-bottom: 20px;
+  color: var(--dark-green);
+  font-weight: bold;
 }
 .page .page-body .section-box.section-02 .section-con li.part-1 {
   background: url(../../inc/img/layout/section/section-02-01.png) no-repeat center top;
@@ -296,6 +329,223 @@ header.f-header .f-sidebar-backdrop {
 .page .page-body .section-box.section-03 {
   padding: 10vh 0 10vh 0;
   min-height: auto;
+}
+.page .page-body .section-box.section-03 .section-con {
+  padding-top: 20px;
+}
+.page .page-body .section-box.section-03 .section-con .section-img {
+  margin: 0 auto 20px auto;
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  background: url(../../inc/img/layout/section/section-03.png) no-repeat center center;
+  background-size: 100%;
+}
+.page .page-body .section-box.section-03 .section-con .txt {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.page .page-body .section-box.section-04 {
+  background: var(--status-field-b);
+  padding: 15vh 0 10vh 0;
+}
+.page .page-body .section-box.section-04 .section-tit.ct {
+  padding: 0 0 50px 0;
+}
+.page .page-body .section-box.section-04 .section-con {
+  position: relative;
+  height: 100%;
+}
+.page .page-body .section-box.section-04 .section-con::before {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  content: "";
+  display: inline-block;
+  width: 500px;
+  height: 800px;
+  background: url(../../inc/img/logo/logo-only.png) no-repeat center top;
+  background-size: 100%;
+  opacity: 0.2;
+  z-index: 0;
+}
+.page .page-body .section-box.section-04 .section-con ul {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.page .page-body .section-box.section-04 .section-con ul li {
+  padding-left: 130px;
+  margin-bottom: 30px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.page .page-body .section-box.section-04 .section-con ul li .tit {
+  padding-top: 25px;
+  font-size: 20px;
+  color: var(--dark-green);
+  font-weight: bold;
+}
+.page .page-body .section-box.section-04 .section-con ul li.part-1 {
+  background: url(../../inc/img/layout/section/section-04-01.png) no-repeat center left;
+  background-size: 120px;
+}
+.page .page-body .section-box.section-04 .section-con ul li.part-2 {
+  background: url(../../inc/img/layout/section/section-04-02.png) no-repeat center left;
+  background-size: 120px;
+}
+.page .page-body .section-box.section-04 .section-con ul li.part-3 {
+  background: url(../../inc/img/layout/section/section-04-03.png) no-repeat center left;
+  background-size: 120px;
+}
+.page .page-body .section-box.section-04 .section-con ul li.part-4 {
+  background: url(../../inc/img/layout/section/section-04-04.png) no-repeat center left;
+  background-size: 120px;
+}
+.page .page-body .section-box.section-04 .section-con ul li.part-5 {
+  background: url(../../inc/img/layout/section/section-04-05.png) no-repeat center left;
+  background-size: 120px;
+}
+.page .page-body .section-box.section-05 {
+  padding: 6vh 0 3vh 0;
+  min-height: auto;
+}
+.page .page-body .section-box.section-05 .section-con {
+  padding-top: 30px;
+}
+.page .page-body .section-box.section-05 .section-con .btn-box {
+  margin-bottom: 0;
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul {
+  display: flex;
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li {
+  width: 20%;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li::before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 230px;
+  height: 80px;
+  background: var(--light-green);
+  clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li .tit {
+  margin: 0 auto 30px auto;
+  width: 60%;
+  height: 80px;
+  line-height: 70px;
+  color: #fff;
+  font-weight: bold;
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li .tit small {
+  top: 50px;
+  line-height: normal;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  font-size: 80%;
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li .txt span {
+  display: block;
+  line-height: 40px;
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li .txt .txt-info {
+  display: block;
+  color: var(--light-green);
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li.part-1::before {
+  background-color: #b2e7e3;
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li.part-1 .tit {
+  background: url(../../inc/img/logo/Default.svg) no-repeat center center;
+  background-size: 100%;
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li.part-4::before {
+  background-color: var(--soft-green);
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li.part-5 .txt {
+  color: var(--light-green);
+}
+.page .page-body .section-box.section-05 .section-con ul.section-ul li.part-5 .txt span {
+  line-height: 26px;
+}
+.page .page-body .section-box.section-05 .section-con .txt {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.page .page-body .section-box.section-06 {
+  padding: 4vh 0 0vh 0;
+  background: var(--status-field-b);
+}
+.page .page-body .section-box.section-06 .section-con {
+  padding: 0;
+  text-align: center;
+}
+.page .page-body .section-box.section-06 .section-con li {
+  position: relative;
+  background: url(../../inc/img/layout/section/section-06.png) no-repeat center center;
+  background-size: 100%;
+  min-height: 160px;
+  width: 900px;
+  margin: 0 auto;
+}
+.page .page-body .section-box.section-06 .section-con li .txt-step {
+  position: absolute;
+  left: 45px;
+  top: 40px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+.page .page-body .section-box.section-06 .section-con li .tit {
+  padding: 35px 0 10px 180px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+}
+.page .page-body .section-box.section-06 .section-con li .tit i {
+  margin-right: 5px;
+}
+.page .page-body .section-box.section-06 .section-con li .txt {
+  padding: 0 0 10px 180px;
+  text-align: left;
+}
+.page .page-body .section-box.section-07 {
+  padding: 10vh 0 3vh 0;
+  min-height: auto;
+}
+.page .page-body .section-box.section-07 .section-tit {
+  margin-bottom: 50px;
+}
+.page .page-body .section-box.section-07 .section-con .txt {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+.page .page-body .section-box.section-07 .section-con .section-img {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  background: url(../../inc/img/layout/section/section-07.png) no-repeat center center;
+  background-size: 100%;
+}
+.page .page-body .section-box.section-07 .section-con .btn-box {
+  padding: 40px 0;
 }
 
 .footer {
