@@ -527,6 +527,21 @@ header.f-header .f-sidebar-backdrop {
 .page .page-body .section-box.section-07 {
   padding: 10vh 0 3vh 0;
   min-height: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+.page .page-body .section-box.section-07::before {
+  position: absolute;
+  left: -10%;
+  top: -30%;
+  content: "";
+  display: inline-block;
+  width: 700px;
+  height: 800px;
+  background: url(../../inc/img/layout/bg-01.svg) no-repeat center top;
+  background-size: 100%;
+  z-index: -1;
 }
 .page .page-body .section-box.section-07 .section-tit {
   margin-bottom: 50px;
