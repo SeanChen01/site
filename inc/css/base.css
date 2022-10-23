@@ -204,9 +204,6 @@ header.f-header .f-sidebar-backdrop {
   background-color: var(--dark-green);
 }
 
-.page .page-body {
-  padding-top: 75px;
-}
 .page .page-body .list-box {
   color: var(--dark-gray);
 }
@@ -272,7 +269,7 @@ header.f-header .f-sidebar-backdrop {
   color: var(--light-green);
 }
 .page .page-body .section-box {
-  min-height: calc(100vh - 75px);
+  min-height: 80vh;
   padding: 20px 0;
 }
 .page .page-body .section-box.section-01 {
@@ -557,7 +554,7 @@ header.f-header .f-sidebar-backdrop {
   max-width: 1000px;
   height: 300px;
   background: url(../../inc/img/layout/section/section-07.png) no-repeat center center;
-  background-size: 100%;
+  background-size: 80%;
 }
 .page .page-body .section-box.section-07 .section-con .btn-box {
   padding: 40px 0;
@@ -621,6 +618,184 @@ header.f-header .f-sidebar-backdrop {
   background-color: #fff;
 }
 
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .page .btn-gotop {
+    right: 0;
+  }
+  .page .page-body .section-box {
+    padding: 20px 0;
+  }
+  .page .page-body .section-box .btn-box {
+    padding: 20px 0;
+  }
+  .page .page-body .section-box .btn-box .btn {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .page .page-body .section-box.section-01 {
+    background-position: -280px -250px;
+    background-size: cover;
+  }
+  .page .page-body .section-box.section-01 .section-con {
+    padding: 0 2%;
+  }
+  .page .page-body .section-box.section-01 .section-con .section-tit {
+    line-height: normal;
+  }
+  .page .page-body .section-box.section-01 .section-con .txt br {
+    display: none;
+  }
+  .page .page-body .section-box.section-02 {
+    padding: 30px 0;
+  }
+  .page .page-body .section-box.section-02 .section-tit.ct {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+  .page .page-body .section-box.section-02 .section-con {
+    padding: 0 4%;
+    flex-direction: column;
+  }
+  .page .page-body .section-box.section-02 .section-con li {
+    width: 100%;
+    padding-top: 140px;
+    margin-bottom: 30px;
+    background-size: 120px !important;
+  }
+  .page .page-body .section-box.section-02 .section-con li .tit {
+    margin-bottom: 5px;
+  }
+  .page .page-body .section-box.section-03 {
+    padding: 30px 0 !important;
+    padding: 20px 0;
+  }
+  .page .page-body .section-box.section-03 .section-tit.ct {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .page .page-body .section-box.section-03 .section-con {
+    padding: 0 !important;
+  }
+  .page .page-body .section-box.section-03 .section-con .section-img {
+    height: 250px;
+  }
+  .page .page-body .section-box.section-03 .section-con .txt.ct {
+    padding: 0 5%;
+    text-align: left;
+  }
+  .page .page-body .section-box.section-04 {
+    padding: 30px 0 !important;
+  }
+  .page .page-body .section-box.section-04 .section-tit.ct {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+  }
+  .page .page-body .section-box.section-04 .section-con {
+    padding: 0 2%;
+  }
+  .page .page-body .section-box.section-04 .section-con::before {
+    height: 400px;
+    top: auto;
+    bottom: 10%;
+  }
+  .page .page-body .section-box.section-04 .section-con ul {
+    grid-template-columns: 100%;
+    padding: 0;
+  }
+  .page .page-body .section-box.section-04 .section-con ul li {
+    padding-left: 105px;
+    background-size: 100px !important;
+    margin-bottom: 10px;
+  }
+  .page .page-body .section-box.section-04 .section-con ul li .tit {
+    font-size: 18px;
+  }
+  .page .page-body .section-box.section-05 {
+    padding: 30px 0 !important;
+  }
+  .page .page-body .section-box.section-05 .section-con {
+    padding: 0 4%;
+  }
+  .page .page-body .section-box.section-05 .section-con .section-ul {
+    padding: 0;
+    flex-direction: column;
+  }
+  .page .page-body .section-box.section-05 .section-con .section-ul li {
+    width: 100% !important;
+  }
+  .page .page-body .section-box.section-05 .section-con .section-ul li::before {
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%) !important;
+  }
+  .page .page-body .section-box.section-05 .section-con .section-ul li::after {
+    display: block;
+    font-family: "icomoon" !important;
+    content: "\e932";
+    color: var(--light-green);
+    margin-bottom: 10px;
+  }
+  .page .page-body .section-box.section-05 .section-con .section-ul li .tit {
+    margin-bottom: 10px !important;
+  }
+  .page .page-body .section-box.section-05 .section-con .section-ul li .txt span {
+    line-height: 30px !important;
+  }
+  .page .page-body .section-box.section-05 .section-con .section-ul li.part-1 .tit {
+    background-size: 80% !important;
+  }
+  .page .page-body .section-box.section-05 .section-con .section-ul li.part-5 .tit {
+    line-height: 80px;
+  }
+  .page .page-body .section-box.section-06 {
+    padding: 30px 0 !important;
+  }
+  .page .page-body .section-box.section-06 .section-con {
+    padding: 4%;
+  }
+  .page .page-body .section-box.section-06 .section-con li {
+    width: 100%;
+    min-height: auto !important;
+    border-radius: 10px;
+    background-image: none;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5058823529);
+    margin-bottom: 20px;
+  }
+  .page .page-body .section-box.section-06 .section-con li .txt-step {
+    left: -6px;
+    top: -6px;
+    padding: 0 30px;
+    background: var(--light-green);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+  .page .page-body .section-box.section-06 .section-con li .tit {
+    text-align: center;
+    padding: 30px 4% 1% 4% !important;
+  }
+  .page .page-body .section-box.section-06 .section-con li .txt {
+    padding: 2% 4% 4% 4% !important;
+  }
+  .page .page-body .section-box.section-07 {
+    padding: 30px 0 !important;
+    padding: 20px 0;
+  }
+  .page .page-body .section-box.section-07 .section-tit.ct {
+    margin-bottom: 20px;
+  }
+  .page .page-body .section-box.section-07 .section-con {
+    padding: 0 4% !important;
+  }
+  .page .page-body .section-box.section-07 .section-con .section-img {
+    height: 180px !important;
+    background-size: 100%;
+  }
+  .page .page-body .section-box.section-07 .section-con .txt {
+    text-align: left !important;
+  }
+  .page .page-body .section-box.section-07 .section-con .btn-box {
+    padding: 10px 0 !important;
+  }
+}
 * {
   font-family: Roboto, Noto Sans TC, arial, sans-serif;
   box-sizing: border-box;
