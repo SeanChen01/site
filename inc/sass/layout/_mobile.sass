@@ -10,6 +10,10 @@
 					.btn
 						margin: 0
 						margin-bottom: 20px
+				.section-tit
+					font-size: 28px
+					br
+						display: inline-block
 				// =====================
 				&.section-01
 					background-position: -280px -250px
@@ -42,8 +46,8 @@
 				&.section-03
 					padding: 30px 0 !important
 					.section-tit.ct
-						width: 70%
-						margin: 0 auto
+						// width: 70%
+						// margin: 0 auto
 					padding: 20px 0
 					.section-con
 						padding: 0 !important
@@ -56,8 +60,8 @@
 				&.section-04
 					padding: 30px 0 !important
 					.section-tit.ct
-						width: 90%
-						margin: 0 auto
+						// width: 90%
+						// margin: 0 auto
 						padding: 0 0 20px 0
 					.section-con
 						padding: 0 2%
@@ -65,6 +69,7 @@
 							height: 400px
 							top: auto
 							bottom: 10%
+							opacity: .1
 						ul
 							grid-template-columns: 100%
 							padding: 0
@@ -85,6 +90,7 @@
 							li
 								width: 100% !important
 								&::before
+									height: 60px !important
 									clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%) !important
 								&::after
 									display: block
@@ -93,7 +99,11 @@
 									color: var(--light-green)
 									margin-bottom: 10px
 								.tit
+									height: 60px !important
 									margin-bottom: 10px !important
+									line-height: 60px !important
+									small
+										top: 40px !important
 								.txt
 									span
 										line-height: 30px !important
