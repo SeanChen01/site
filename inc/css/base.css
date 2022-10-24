@@ -394,6 +394,10 @@ header.f-header .f-sidebar-backdrop {
   color: var(--dark-green);
   font-weight: bold;
 }
+.page .page-body .section-box.section-04 .section-con ul li .tit a {
+  text-decoration: underline;
+  color: var(--dark-green);
+}
 .page .page-body .section-box.section-04 .section-con ul li.part-1 {
   background: url(../../inc/img/layout/section/section-04-01.png) no-repeat center left;
   background-size: 120px;
@@ -564,6 +568,21 @@ header.f-header .f-sidebar-backdrop {
 }
 .page .page-body .section-box.section-07 .section-con .btn-box {
   padding: 40px 0;
+}
+.page .page-footer {
+  text-align: center;
+  padding: 25px 0 25px 0;
+  color: #686868;
+}
+.page .page-footer .txt {
+  margin-bottom: 20px;
+}
+.page .page-footer a {
+  text-decoration: underline;
+  color: var(--light-green);
+}
+.page .page-footer img {
+  width: 120px;
 }
 
 .footer {
@@ -745,19 +764,20 @@ header.f-header .f-sidebar-backdrop {
   .page .page-body .section-box.section-05 .section-con .section-ul li .tit {
     height: 60px !important;
     margin-bottom: 10px !important;
-    line-height: 60px !important;
+    line-height: 50px !important;
   }
   .page .page-body .section-box.section-05 .section-con .section-ul li .tit small {
-    top: 40px !important;
+    top: 35px !important;
   }
   .page .page-body .section-box.section-05 .section-con .section-ul li .txt span {
     line-height: 30px !important;
   }
   .page .page-body .section-box.section-05 .section-con .section-ul li.part-1 .tit {
-    background-size: 80% !important;
+    background-size: 70% !important;
   }
   .page .page-body .section-box.section-05 .section-con .section-ul li.part-5 .tit {
     line-height: 80px;
+    line-height: 60px !important;
   }
   .page .page-body .section-box.section-06 {
     padding: 30px 0 !important;
