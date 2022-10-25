@@ -586,6 +586,7 @@ header.f-header .f-sidebar-backdrop {
   margin-bottom: 20px;
 }
 .page .page-footer a {
+  display: inline-block;
   text-decoration: underline;
   color: var(--light-green);
 }
