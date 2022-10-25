@@ -266,6 +266,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/inc\/img\/logo\/logo-wavenet.png" : {
+      "ft" : 32768,
+      "iS" : 8379,
+      "oA" : 0,
+      "oAP" : "\/inc\/img\/logo\/logo-wavenet.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/inc\/img\/logo\/White.svg" : {
       "ft" : 2097152,
       "miP" : 0,
