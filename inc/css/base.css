@@ -23,10 +23,14 @@
 }
 
 .page-header {
-  position: relative;
-  width: 100%;
+  position: sticky;
+}
+.page-header img {
+  margin: 5px auto;
+  width: 180px;
 }
 
+.page-header,
 header.f-header {
   position: fixed;
   top: 0;
@@ -44,6 +48,7 @@ header.f-header {
   font-weight: 500;
   background: rgba(255, 255, 255, 0.8196078431);
 }
+.page-header .header-fill,
 header.f-header .header-fill {
   position: absolute;
   top: 0;
@@ -55,18 +60,22 @@ header.f-header .header-fill {
   z-index: -1;
   opacity: 0;
 }
+.page-header .f-left-panel,
 header.f-header .f-left-panel {
   display: flex;
   align-items: center;
 }
+.page-header .f-left-panel .f-left-logo-area,
 header.f-header .f-left-panel .f-left-logo-area {
   display: flex;
   align-items: center;
 }
+.page-header .f-left-panel .f-left-logo-area img.f-logo,
 header.f-header .f-left-panel .f-left-logo-area img.f-logo {
   width: 100%;
   height: 30px;
 }
+.page-header .f-left-panel .f-left-logo-area span,
 header.f-header .f-left-panel .f-left-logo-area span {
   font-family: Sarabun;
   font-size: 24px;
@@ -75,6 +84,7 @@ header.f-header .f-left-panel .f-left-logo-area span {
   text-align: left;
   color: #30504f;
 }
+.page-header .f-left-panel .f-nav ul,
 header.f-header .f-left-panel .f-nav ul {
   display: flex;
   justify-content: center;
@@ -82,6 +92,7 @@ header.f-header .f-left-panel .f-nav ul {
   padding: 0;
   color: var(--dark-black);
 }
+.page-header .f-left-panel .f-nav ul li,
 header.f-header .f-left-panel .f-nav ul li {
   position: relative;
   list-style: none;
@@ -92,18 +103,22 @@ header.f-header .f-left-panel .f-nav ul li {
   align-self: center;
   margin-left: 1.8vw;
 }
+.page-header .f-left-panel .f-nav ul li.f-mobile-nav,
 header.f-header .f-left-panel .f-nav ul li.f-mobile-nav {
   display: none;
 }
+.page-header .f-left-panel .f-nav ul li a,
 header.f-header .f-left-panel .f-nav ul li a {
   position: relative;
   text-decoration: none;
   color: inherit;
   white-space: nowrap;
 }
+.page-header .f-left-panel .f-nav ul li.active,
 header.f-header .f-left-panel .f-nav ul li.active {
   color: var(--dark-green);
 }
+.page-header .f-left-panel .f-nav ul li.active a:before,
 header.f-header .f-left-panel .f-nav ul li.active a:before {
   content: "";
   width: 100%;
@@ -113,6 +128,7 @@ header.f-header .f-left-panel .f-nav ul li.active a:before {
   bottom: -13px;
   left: 0;
 }
+.page-header .f-left-panel .f-nav ul li ul,
 header.f-header .f-left-panel .f-nav ul li ul {
   display: none;
   -webkit-padding-start: 0;
@@ -128,32 +144,39 @@ header.f-header .f-left-panel .f-nav ul li ul {
   letter-spacing: 0.5px;
   background-color: #fff;
 }
+.page-header .f-left-panel .f-nav ul li:hover ul,
 header.f-header .f-left-panel .f-nav ul li:hover ul {
   display: block;
 }
+.page-header .f-left-panel .f-nav ul li:hover ul li,
 header.f-header .f-left-panel .f-nav ul li:hover ul li {
   padding: 10px;
   color: #222;
   text-align: left;
 }
+.page-header .f-left-panel .f-nav ul li:hover ul li a,
 header.f-header .f-left-panel .f-nav ul li:hover ul li a {
   color: inherit;
   text-decoration: none;
 }
+.page-header .f-left-panel .f-nav ul li:hover ul li:hover,
 header.f-header .f-left-panel .f-nav ul li:hover ul li:hover {
   color: #30504f;
   background-color: #eff8f7;
 }
+.page-header .f-desktop-right-panel,
 header.f-header .f-desktop-right-panel {
   display: flex;
   align-items: center;
 }
+.page-header .f-desktop-right-panel .f-header-tracking-list,
 header.f-header .f-desktop-right-panel .f-header-tracking-list {
   display: flex;
   align-items: unset;
   cursor: pointer;
   min-width: 85px;
 }
+.page-header .f-desktop-right-panel .f-header-tracking-list svg,
 header.f-header .f-desktop-right-panel .f-header-tracking-list svg {
   height: 15px;
   width: 15px;
@@ -161,6 +184,7 @@ header.f-header .f-desktop-right-panel .f-header-tracking-list svg {
   color: var(--light-green);
   margin-bottom: -1px;
 }
+.page-header .f-desktop-right-panel button.f-btn,
 header.f-header .f-desktop-right-panel button.f-btn {
   height: 46px;
   margin-left: 3rem;
@@ -174,6 +198,9 @@ header.f-header .f-desktop-right-panel button.f-btn {
   border: 1px solid var(--dark-black);
   color: #fff;
 }
+.page-header .f-moblie-right-panel,
+.page-header .f-mobile-sidebar,
+.page-header .f-sidebar-backdrop,
 header.f-header .f-moblie-right-panel,
 header.f-header .f-mobile-sidebar,
 header.f-header .f-sidebar-backdrop {
@@ -287,7 +314,7 @@ header.f-header .f-sidebar-backdrop {
 .page .page-body .section-box.section-01 {
   background: url(../../inc/img/layout/section/section-01-bg.svg) no-repeat 50px center;
   background-size: 150%;
-  padding-top: 15vh;
+  padding-top: 20vh;
 }
 .page .page-body .section-box.section-01 .section-tit br {
   display: inline-block !important;
@@ -300,8 +327,8 @@ header.f-header .f-sidebar-backdrop {
 }
 .page .page-body .section-box.section-01 .img-logo {
   display: inline-block;
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 70px;
   background: url(../../inc/img/layout/logo.svg) no-repeat center left;
   background-size: 100%;
 }
@@ -598,6 +625,22 @@ header.f-header .f-sidebar-backdrop {
   width: 120px;
 }
 
+.page .page-footer {
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+.page .page-footer .txt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 0;
+  font-size: 13px;
+  color: var(--dark-gray);
+}
+
+.page-footer,
 .footer {
   display: flex;
   align-items: center;
@@ -612,12 +655,14 @@ header.f-header .f-sidebar-backdrop {
   position: relative;
   color: var(--dark-black);
 }
+.page-footer ul,
 .footer ul {
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
+.page-footer ul li,
 .footer ul li {
   font-weight: 500;
   letter-spacing: 0.67px;
@@ -626,6 +671,7 @@ header.f-header .f-sidebar-backdrop {
   position: relative;
   width: 100px;
 }
+.page-footer ul li a,
 .footer ul li a {
   text-decoration: none;
   position: relative;
@@ -633,6 +679,7 @@ header.f-header .f-sidebar-backdrop {
   color: inherit;
   white-space: nowrap;
 }
+.page-footer .f-copyright.f-big,
 .footer .f-copyright.f-big {
   font-size: 13px;
   font-weight: 400;
@@ -642,9 +689,11 @@ header.f-header .f-sidebar-backdrop {
   margin-right: 30px;
   display: inline-block;
 }
+.page-footer .f-copyright.f-small,
 .footer .f-copyright.f-small {
   display: none;
 }
+.page-footer .f-right-triangle,
 .footer .f-right-triangle {
   position: absolute;
   height: 89px;
