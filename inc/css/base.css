@@ -223,6 +223,10 @@ header.f-header .f-sidebar-backdrop {
   text-decoration: underline;
   display: inline-block;
 }
+.page .page-body a.section-tit {
+  display: inline-block;
+  margin: 0 auto;
+}
 .page .page-body .section-tit {
   font-size: 30px;
   font-weight: bold;
