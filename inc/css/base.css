@@ -625,12 +625,12 @@ header.f-header .f-sidebar-backdrop {
   width: 120px;
 }
 
-.page .page-footer {
+.page .page-footer.Cathay-footer {
   position: relative;
   padding: 0;
   width: 100%;
 }
-.page .page-footer .txt {
+.page .page-footer.Cathay-footer .txt {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -638,6 +638,7 @@ header.f-header .f-sidebar-backdrop {
   margin: 0;
   font-size: 13px;
   color: var(--dark-gray);
+  width: 100%;
 }
 
 .page-footer,
