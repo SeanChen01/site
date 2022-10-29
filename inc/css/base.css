@@ -64,11 +64,13 @@ header.f-header .header-fill {
 header.f-header .f-left-panel {
   display: flex;
   align-items: center;
+  width: 1050px;
 }
 .page-header .f-left-panel .f-left-logo-area,
 header.f-header .f-left-panel .f-left-logo-area {
   display: flex;
   align-items: center;
+  width: 180px;
 }
 .page-header .f-left-panel .f-left-logo-area img.f-logo,
 header.f-header .f-left-panel .f-left-logo-area img.f-logo {
@@ -209,7 +211,7 @@ header.f-header .f-sidebar-backdrop {
 .btn-gotop {
   bottom: 5rem;
   right: 38.5px;
-  z-index: 4;
+  z-index: 500;
   margin: 15.5px 0 0;
   display: block;
   transform: translateY(0) rotate(90deg);
@@ -718,6 +720,7 @@ header.f-header .f-sidebar-backdrop {
   }
   .page .page-header {
     background: none;
+    height: auto;
   }
   .page .page-header .f-left-logo-area {
     position: fixed;
@@ -725,10 +728,9 @@ header.f-header .f-sidebar-backdrop {
     top: 0;
     width: 100%;
     text-align: center;
-    padding-top: 10px;
   }
   .page .page-header .f-nav {
-    padding: 90px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
     background: rgba(255, 255, 255, 0.8784313725);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2352941176);
   }
@@ -770,7 +772,7 @@ header.f-header .f-sidebar-backdrop {
     display: none;
   }
   .page .page-body .section-box.section-02 {
-    padding: 15vh 0 !important;
+    padding: 13vh 0 !important;
   }
   .page .page-body .section-box.section-02 .section-tit.ct {
     margin-bottom: 0;
@@ -790,7 +792,7 @@ header.f-header .f-sidebar-backdrop {
     margin-bottom: 5px;
   }
   .page .page-body .section-box.section-03 {
-    padding: 15vh 0 !important;
+    padding: 13vh 0 !important;
     padding: 20px 0;
   }
   .page .page-body .section-box.section-03 .section-con {
@@ -804,7 +806,7 @@ header.f-header .f-sidebar-backdrop {
     text-align: left;
   }
   .page .page-body .section-box.section-04 {
-    padding: 15vh 0 !important;
+    padding: 13vh 0 !important;
   }
   .page .page-body .section-box.section-04 .section-tit.ct {
     padding: 0 0 20px 0;
@@ -831,7 +833,7 @@ header.f-header .f-sidebar-backdrop {
     font-size: 18px;
   }
   .page .page-body .section-box.section-05 {
-    padding: 15vh 0 !important;
+    padding: 13vh 0 !important;
   }
   .page .page-body .section-box.section-05 .section-con {
     padding: 0 4%;
@@ -873,7 +875,7 @@ header.f-header .f-sidebar-backdrop {
     line-height: 60px !important;
   }
   .page .page-body .section-box.section-06 {
-    padding: 15vh 0 !important;
+    padding: 13vh 0 !important;
   }
   .page .page-body .section-box.section-06 .section-con {
     padding: 4%;
@@ -902,7 +904,7 @@ header.f-header .f-sidebar-backdrop {
     padding: 2% 4% 4% 4% !important;
   }
   .page .page-body .section-box.section-07 {
-    padding: 15vh 0 !important;
+    padding: 13vh 0 !important;
     padding: 20px 0;
   }
   .page .page-body .section-box.section-07 .section-tit.ct {
