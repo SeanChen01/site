@@ -13,7 +13,7 @@ $(function() {
 		$(".btn-gotop").fadeOut();
 	  }
 	});
-	$(".btn-gotop").click(function() {
+	$(".btn-gotop,.f-logo").click(function() {
 	  $('body, html').animate({
 		scrollTop: 0
 	  }, 500);

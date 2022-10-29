@@ -76,6 +76,7 @@ header.f-header .f-left-panel .f-left-logo-area {
 header.f-header .f-left-panel .f-left-logo-area img.f-logo {
   width: 100%;
   height: 38px;
+  cursor: pointer;
 }
 .page-header .f-left-panel .f-left-logo-area span,
 header.f-header .f-left-panel .f-left-logo-area span {
