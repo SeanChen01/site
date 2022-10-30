@@ -649,7 +649,7 @@ header.f-header .f-sidebar-backdrop {
   justify-content: space-between;
   background-color: #fff;
   width: 100%;
-  height: 89px;
+  height: auto;
   padding-left: 60px;
   border-radius: 0 1rem 0 0;
   font-size: 16px;
