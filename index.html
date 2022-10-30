@@ -12,23 +12,312 @@
     <!-- 共用JS star -->
     <script type="text/javascript" src="inc/lib/jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="inc/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script type="text/javascript" src="inc/js/base.js"></script>
 
     <link rel="stylesheet" type="text/css" href="inc/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="inc/lib/icomoon/style.css">
     <link rel="stylesheet" type="text/css" href="inc/css/base.css">
-
+	<script>
+		$(window).ready(function() {
+			// $(".page-header").load("html/page-header.html");
+			// $(".page-footer").load("html/page-footer.html");
+		});
+		
+	</script>
 </head>
 
-<body class="page">
+<body class="page" data-spy="scroll" data-target="#navbar-example" data-offset="50">
 	
     <div class="page-content">
-		
-		<div class="page-body">
-			<div class="btn-box">
-				<!-- <a class="btn" href="index-Caas.html" target="_blank">CAAS</a> -->
-				<a class="btn btn-style-2" style="margin:0;" href="index-Wavenet.html">Wavenet</a>
+		<a class="btn-gotop" href="javascript:void(0);">
+			TOP
+		</a>
+
+        <div class="page-header">
+			<div class="f-left-panel">
+				<div class="f-left-logo-area">
+					<img src="./inc/img/layout/logo.svg" alt="logo" class="f-logo">
+				</div>
+				<nav class="f-nav" id="navbar-example">
+					<ul>
+						<li><a href="#sec-1">三大優勢</a></li>
+						<li><a href="#sec-2">適用商家</a></li>
+						<li><a href="#sec-3">一站式洽商</a></li>
+						<li><a href="#sec-4">申請流程</a></li>
+						<li><a class="btn" href="#sec-5">立即註冊</a></li>
+						<li><a class="btn btn-style-2" href="#sec-6">立即申請</a></li>
+					</ul>
+					<!---->
+				</nav>
 			</div>
+			
+		</div>
+        <div class="page-body" >
+			<section class="section-box section-01">
+				<div class="section-con">
+					<div class="img-logo"></div>
+					<div class="section-tit">
+						國泰客戶專屬優惠合作申請<br/>
+						集團1,400萬會員，等你來合作！</div>
+					<div class="txt">
+						廣告投放成本越來越高？獲客越來越難？<br/>
+						優惠合作要一家一家談？談到天荒地老！<br/>
+						如何一次談到最多合作露出管道？<br/>
+						國泰CaaS生態圈將是您最佳的合作夥伴，單一入口輕鬆介接全集團資源，有機會觸及超過台灣一半人口，更能精準拓展高資產、高消費力客群，期待與您一起共創商機！
+					</div>
+					<div class="btn-box">
+						<a class="btn" href=" https://caas.cathayholdings.com/register?utm_source=wavenet&utm_medium=eventpage&utm_campaign=coupon_register_221025" target="_blank">立即註冊CaaS會員</a>
+						<a class="btn btn-style-2" href="https://caas.cathayholdings.com/selfServices?utm_source=wavenet&utm_medium=eventpage&utm_campaign=coupon_apply_221025"  target="_blank">立即申請優惠合作</a>
+					</div>
+				</div>
+			</section>
+			<!-- ============================= -->
+			<section class="section-box section-02" id="sec-1">
+				<div class="section-tit ct">國泰合作三大優勢</div>
+				<ul class="section-con">
+					<li class="part-1">
+						<div class="tit">一、1,400萬會員觸及</div>
+						<div class="txt">
+							涵蓋國泰數位生活會員、保戶、銀行VIP客戶等金融客群，精準接觸高價值、高資產客戶
+						</div>
+					</li>
+					<li class="part-2">
+						<div class="tit">二、全方位行銷導客</div>
+						<div class="txt">
+							OMO全渠道宣傳，從網頁、APP到實體DM精準投放，優惠曝光最大化，消費人潮輕鬆導引
+						</div>
+					</li>
+					<li class="part-3">
+						<div class="tit">三、一站式入口申請</div>
+						<div class="txt">
+							合作申請流程清楚、透明，專業商業開發團隊協助，攜手共創新商機
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!-- ============================= -->
+			<section class="section-box section-03" id="sec-2">
+				<a id="join" class="section-tit ct" href="#join">
+					國泰客戶專屬優惠 <br/> 合作適用商家
+				</a>
+				<div class="section-con">
+					<div class="section-img"></div>
+					<div class="txt ct">
+						＊提醒您因金融保險法規限制，此「優惠券合作」申請，以下產業可能無法加入：
+		醫療、醫療器材、保健食品、人力仲介、汽車旅館 、菸酒專賣店、汽車維修廠、托兒所、幼兒園、補習班等，但仍可加入CaaS會員申請其他場景服務。
+					</div>
+				</div>
+				
+			</section>
+			<section class="section-box section-04" id="sec-3">
+				<a id="value" class="section-tit ct" href="#value">
+					共營1,400萬會員商機 <br/> CaaS一站式洽商最便利
+				</a>
+				<div class="section-con">
+					<ul>
+						<li class="part-1">
+							<div class="tit">
+								<a class="txt-link" href="https://patron.cathaylife.com.tw/ODAA/" target="_blank">國泰人壽全體保戶 800萬+人</a>
+							</div>
+							<div class="txt">
+								每月EDM寄發壽星保戶<br/>
+								每季發送廣宣EDM，向全體保戶推廣
+							</div>
+						</li>
+						<li class="part-2">
+							<div class="tit">
+								<a class="txt-link" href="https://myrewards-app.com.tw/exchange.html"  target="_blank">國泰優惠APP會員 290萬+人</a>
+							</div>
+							<div class="txt">
+								異業合作優惠券上架、目標客群精準推播、<br/>APP首頁BN版位曝光、花點熱門品牌露出
+
+								<!-- EDM、VIP CLUB、訊息中心 -->
+							</div>
+						</li>
+						<li class="part-3">
+							<div class="tit">
+								<a class="txt-link" href="https://patron.cathaylife.com.tw/vipclub/activity02"  target="_blank">國泰人壽VIP保戶 17萬+人</a>
+							</div>
+							<div class="txt">
+								EDM、VIP CLUB、訊息中心
+								<!-- 企業內員工網站EDM、訊息中心 -->
+							</div>
+						</li>
+						<li class="part-4">
+							<div class="tit">
+								<a class="txt-link" href="https://www.cathaybk.com.tw/cathaybk/personal/wealth/vip/#tab3"  target="_blank">國泰世華財富管理VIP 25萬+人</a>
+							</div>
+							<div class="txt">
+								網銀、EDM、紙本
+								<!-- 異業合作優惠券上架、目標客群精準推播、APP首頁BN版位曝光、花點熱門品牌露出 -->
+							</div>
+						</li>
+						<li class="part-5">
+							<div class="tit">
+								國泰集團員工 6萬+人
+							</div>
+							<div class="txt">
+								企業內員工網站EDM、訊息中心
+								<!-- 網銀、EDM、紙本 -->
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section-box section-05" id="sec-4">
+				<a id="or" class="section-tit ct" href="#or">
+					國泰CaaS會員 <br/> 帳號申請流程
+				</a>
+				<div class="txt ct">3步驟5分鐘，會員申請輕鬆完成</div>
+				
+				<div class="section-con">
+					<ul class="section-ul">
+						<li class="part-1">
+							<div class="tit"></div>
+							<div class="txt">進入 CaaS 平台註冊入口</div>
+						</li>
+						<li class="part-2">
+							<div class="tit">
+								成為一般會員
+								<small>（30~60秒）</small>
+							</div>
+							<div class="txt">
+								<span>設定密碼</span> 
+								<span>設定公司帳號</span> 
+								<span>填寫公司名稱</span> 
+								<span>填寫公司統編</span> 
+							</div>
+						</li>
+						<li class="part-3">
+							<div class="tit">
+								升級企業會員
+								<small>（3~5分鐘）</small>
+							</div>
+							<div class="txt">
+								<span>填入公司電話</span>
+								<span>填入公司網站</span>
+								<span class="txt-info">上傳公司證明文件＊</span>
+							</div>
+						</li>
+						<li class="part-4">
+							<div class="tit">
+								文件審查
+								<small>（1個工作天）</small>
+							</div>
+							<div class="txt">
+								<span>國泰金控進行文件審查</span>
+							</div>
+						</li>
+						<li class="part-5">
+							<div class="tit">
+								啟用企業會員帳號
+							</div>
+							<div class="txt">
+								<span>成為 CaaS 企業會員後，即可立即申請「國泰客戶專屬優惠服務」</span>
+							</div>
+						</li>
+					</ul>
+					<div class="btn-box">
+						<a class="btn" href=" https://caas.cathayholdings.com/register?utm_source=wavenet&utm_medium=eventpage&utm_campaign=coupon_register_221025" target="_blank">立即註冊CaaS會員</a>
+						<a class="btn btn-style-2" href="https://caas.cathayholdings.com/selfServices?utm_source=wavenet&utm_medium=eventpage&utm_campaign=coupon_apply_221025"  target="_blank">立即申請優惠合作</a>
+					</div>
+					<div class="list-box">
+						<div class="tit">溫馨提醒：</div>
+						<ul class="list-num">
+							<li>為加速註冊流程，請先準備「公司證明文件」可一次完成企業會員升級。</li>
+							<li>「公司證明文件」：登記機關核准公司登記之核准函、或公司登記表、或從經濟部商業司「
+								<a class="txt-link" href="https://findbiz.nat.gov.tw/fts/query/QueryBar/queryInit.do;jsessionid=33AEBE398217B77DA4350938B36A6C0D?disj=33AEBE398217B77DA4350938B36A6C0D&fhl=zh_TW
+								" target="_blank">工商登記公示資料查詢服務</a>
+								」列印「貴公司營業登記證明」並加蓋「公司發票章」之彩色掃描檔案；檔案限 PDF、PNG、JPEG 格式，大小限制 10 MB。</li>
+						</ul>
+					</div>
+					
+					
+
+					
+					
+				</div>
+			</section>
+			<section class="section-box section-06" id="sec-5">
+				<a id="apply" class="section-tit ct" href="#apply">
+					國泰客戶專屬優惠 <br/> 合作申請流程
+				</a>
+				<div class="txt ct">*提醒您！成為CaaS企業會員後，即具備「國泰客戶專屬優惠」合作申請資格</div>
+				<ul class="section-con">
+					<li>
+						<span class="txt-step">STEP 1</span>
+						<div class="tit">
+							<i class="icon-user"></i>選擇提案合作對象(通路)
+						</div>
+						<div class="txt">
+							國泰優惠APP 丨 Join國泰享好康 丨 VIP CLUB賓賓有禮 丨 財務管理VIP專享優惠 丨 國泰員工福利
+						</div>
+					</li>
+					<li>
+						<span class="txt-step">STEP 2</span>
+						<div class="tit">
+							<i class="icon-edit"></i>填寫公司商品與服務資訊
+						</div>
+						<div class="txt">
+							品牌名稱 丨 產品或服務內容 丨 產品服務類型通路 丨 產品和服務內容說明
+						</div>
+					</li>
+					<li>
+						<span class="txt-step">STEP 3</span>
+						<div class="tit">
+							<i class="icon-list"></i>填寫優惠活動提案內容
+						</div>
+						<div class="txt">
+							活動名稱 丨 活動時間 丨 優惠方案說明 丨 優惠券使用說明 丨 優惠券提供型式 丨 優惠券使用通路
+						</div>
+					</li>
+					<li>
+						<span class="txt-step">STEP 4</span>
+						<div class="tit">
+							<i class="icon-upload"></i>上傳優惠活動提案內容
+						</div>
+						<div class="txt">
+							品牌識別圖片 丨 產品或服務圖片 丨 合作提案
+						</div>
+					</li>
+				</ul>
+				<div class="btn-box">
+					<a class="btn" href=" https://caas.cathayholdings.com/register?utm_source=wavenet&utm_medium=eventpage&utm_campaign=coupon_register_221025" target="_blank">立即註冊CaaS會員</a>
+					<a class="btn btn-style-2" href="https://caas.cathayholdings.com/selfServices?utm_source=wavenet&utm_medium=eventpage&utm_campaign=coupon_apply_221025"  target="_blank">立即申請優惠合作</a>
+				</div>
+			</section>
+			<section class="section-box section-07" id="sec-6">
+				<a id="intro" class="section-tit ct" href="#intro">
+					想合作，找CaaS！ <br/> CaaS 是您最佳的生態圈夥伴
+					
+				</a>
+				<div class="section-con">
+					<div class="txt">
+						CaaS (Cathay as a Service) 國泰生態圈服務平台，可以說是「金融服務」的電商平台，
+	透過一站式模式整合集團資源，讓所有想與國泰合作的企業商戶都能在CaaS平台上對接國泰的服務與資源。
+	
+	想合作找不到窗口？想創新找不到靈感？想轉型找不到方向？
+	CaaS提供各種場景解決方案與實際案例，若您有任何想法或需求，歡迎立即免費註冊申請服務。
+					</div>
+					<div class="section-img"></div>
+					<div class="btn-box">
+						<a class="btn" href=" https://caas.cathayholdings.com/register?utm_source=wavenet&utm_medium=eventpage&utm_campaign=coupon_register_221025" target="_blank">立即註冊CaaS會員</a>
+						<a class="btn btn-style-2" href="https://caas.cathayholdings.com/selfServices?utm_source=wavenet&utm_medium=eventpage&utm_campaign=coupon_apply_221025"  target="_blank">立即申請優惠合作</a>
+					</div>
+				</div>
+			</section>
+		</div>
+        <!-- <div class="page-footer Cathay-footer">
+			<span class="txt">國泰金控版權所有 2021 Copyright © Cathay Holdings All Right Reserved.	
+		</div> -->
+        <div class="page-footer wavenet-footer">
+			<div class="txt">
+				本次國泰客戶優惠券合作行銷活動，由國泰金控委由
+				<a href="https://www.wavenet.com.tw/b2bleadgen/" target="_blank">潮網科技</a>
+				執行
+			</div>
+			<img src="/inc/img/logo/logo-wavenet.png" alt="">
 		</div>
         
     </div><!-- /page-content -->
