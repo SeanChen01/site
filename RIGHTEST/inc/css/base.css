@@ -1,0 +1,165 @@
+::-webkit-input-placeholder {
+  color: #8B8B8B;
+}::-moz-placeholder {
+  color: #8B8B8B;
+}:-ms-input-placeholder {
+  color: #8B8B8B;
+}::-ms-input-placeholder {
+  color: #8B8B8B;
+}::placeholder {
+  color: #8B8B8B;
+}
+
+.div-tb {
+  display: table;
+  width: 100%;
+}
+.div-tb .td {
+  display: table-cell;
+  padding: 5px;
+}
+.div-tb .td:first-child {
+  padding-left: 0;
+}
+.div-tb .td:last-child {
+  padding-right: 0;
+}
+
+.w-50per {
+  width: 50% !important;
+}
+
+.w-100per {
+  width: 100% !important;
+}
+
+img {
+  width: 100%;
+}
+
+.txt {
+  color: #8B8B8B;
+}
+
+.page {
+  background: #E6E6E6;
+}
+.page .page-content {
+  position: relative;
+  background: #fff;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page .page-content .page-header {
+  z-index: 300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 10px rgba(51, 51, 51, 0.3098039216);
+          box-shadow: 0 3px 10px rgba(51, 51, 51, 0.3098039216);
+  text-align: center;
+}
+.page .page-content .page-header .logo {
+  max-width: 190px;
+  margin: 10px;
+}
+.page .page-content .page-header .page-header-tit {
+  position: relative;
+  display: inline-block;
+  color: #004ea0;
+  padding: 5px 0 0 20px;
+  line-height: 36px;
+  font-size: 110%;
+}
+.page .page-content .page-header .page-header-tit::before {
+  position: absolute;
+  content: "";
+  left: 3px;
+  top: 5px;
+  height: 90%;
+  width: 1px;
+  background: #004ea0;
+}
+
+.card-header {
+  padding: 0;
+  border-radius: 0;
+}
+.card {
+  border: none;
+  width: 100%;
+  padding: 4% 4% 0 4%;
+}
+.card .card-tit-h1,
+.card .card-tit-h2 {
+  font-size: 135%;
+  font-weight: bold;
+  color: #004F9C;
+  margin: 10px 0;
+}
+.card .card-tit-h2 {
+  font-size: 125%;
+  color: #1F1F1F;
+}
+.card .txt-info {
+  margin: 0 0 10px 0;
+}
+
+.form {
+  padding: 2% 0 0 0;
+  margin-bottom: 10px;
+}
+.form.gray-border {
+  padding: 4%;
+  border: 1px solid #D1D1D1;
+  border-radius: 5px;
+}
+.form .form-group label {
+  color: #1F1F1F;
+  margin-bottom: 3px;
+}
+.form .form-group input[type=date],
+.form .form-group .form-control,
+.form .form-group .custom-select {
+  padding: 0 10px;
+  border-radius: 0;
+  line-height: 52px;
+  background: #F0F0F0;
+  border: none;
+  height: auto;
+  border-bottom: 1px solid #8B8B8B;
+}
+.form .form-group .custom-select {
+  background: #F0F0F0 url(../img/icon/sel-arrow-down.png) no-repeat right center;
+  background-size: 40px;
+}
+.form .form-group input[type=date] {
+  background: #F0F0F0 url(../img/icon/calendar.svg) no-repeat right center;
+  background-size: 40px;
+}
+.form .form-group ::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+* {
+  font-family: Roboto, Noto Sans TC, arial, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+  background-color: #fbfbfb;
+}
+.page a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.page ul {
+  list-style: none;
+}

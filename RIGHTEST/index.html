@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>RIGHTEST</title>
+    <link rel="shortcut icon" href="inc/img/favicon.png">
+	<meta property="og:image" content="https://seanchen01.github.io/site/inc/img/logo/og-1.jpg">
+    <!-- 共用JS star -->
+    <script type="text/javascript" src="inc/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="inc/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script type="text/javascript" src="inc/js/base.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="inc/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="inc/lib/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="inc/css/base.css">
+</head>
+
+<body class="page">
+    <div class="page-content">
+        <!-- <div class="page-header">
+			<img class="logo" src="inc/img/logo/logo.svg" alt="">
+			<div class="page-header-tit">我的預約</div>
+		</div> -->
+        <div class="page-header-img">
+			<img src="inc/img/layout/top-img.jpg" alt="">
+		</div>
+        <div class="card">
+			<div class="card-tit-h1">預約取貨</div>
+			<div class="txt-info">📣先預約、後取貨</div>
+			<div class="form">
+				<div class="form-group">
+					<label for="form-input">姓名</label>
+					<input type="text" class="form-control" id="form-input" placeholder="請輸入您的真實姓名">
+				</div>
+				<div class="form-group">
+					<label for="form-input">行動電話</label>
+					<input type="text" class="form-control" id="form-input" placeholder="請輸入您的行動電話號碼">
+				</div>
+			</div>
+			<div class="card-tit-h2">選擇預約商品與數量</div>
+			<div class="form gray-border">
+				<div class="form-group">
+					<div class="form-img">
+						<img src="inc/img/product/product-01.jpg" alt="">
+					</div>
+					<label for="form-input">藍牙血糖機 GM700SB</label>
+					<select class="custom-select">
+						<option value="" disabled selected>請選擇欲預約數量</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<div class="form-img">
+						<img src="inc/img/product/product-02.jpg" alt="">
+					</div>
+					<label for="form-input">血糖測試片 GS700/盒(50片)</label>
+					<select class="custom-select">
+						<option value="" disabled selected>請選擇欲預約數量</option>
+					</select>
+				</div>
+			</div>
+			<div class="card-tit-h2">選擇預約店家與日期</div>
+			<div class="txt">
+				因各店營業時間不一，請於該店營業時間前往取貨，如遇周末、特殊節日，建議先致電確認營業時間後再預約。可預約取貨日為第2~14天，將替您保留7天(從預約取貨日開始計算)，逾期不予保留。
+			</div>
+			<div class="form">
+				<div class="form-group">
+					<label for="form-input">預約店家位置</label>
+					<div class="div-tb">
+						<div class="td w-50per">
+							<select class="custom-select">
+								<option value="" disabled selected>縣市</option>
+							</select>
+						</div>
+						<div class="td w-50per">
+							<select class="custom-select">
+								<option value="" disabled selected>鄉鎮區</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="form-input">預約店家名稱</label>
+					<select class="custom-select">
+						<option value="" disabled selected>請選擇預約店家的名稱</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="form-input">預約取貨日 </label>
+					<input id="date" type="text" class="form-control" id="form-input" placeholder="請選擇日期" onfocus="(this.type='date')" onblur="(this.type='text')">
+				</div>
+			</div>
+			<div class="card-footer">
+				<a class="btn btn-primary" href="javascript:void(0);">送出</a>
+				<a class="btn btn-primary disabled" href="javascript:void(0);">送出</a>
+			</div>
+		</div>
+		<!-- ========================== -->
+		<!-- ========================== -->
+		<!-- ========================== -->
+		<div class="card size-s">
+			<div class="card-tit">
+				藍牙血糖機
+				<div class="txt-status">店家確認中</div>
+			</div>
+			<div class="txt">
+				商品數量：1台<br>
+				預約日期：2023/05/20<br>
+				預約店家名稱：弘康醫療儀器行<br>
+				電話號碼：04-22620215<br>
+				店家地址：台中市南區建國南路一段92號
+			</div>
+		</div>
+		<div class="card size-s">
+			<div class="card-tit">
+				血糖測試片
+				<div class="txt-status">店家接受預約</div>
+			</div>
+			<div class="txt">
+				商品數量：1台<br>
+				預約日期：2023/05/20<br>
+				預約店家名稱：弘康醫療儀器行<br>
+				電話號碼：04-22620215<br>
+				店家地址：台中市南區建國南路一段92號
+				
+			</div>
+		</div>
+		<div class="card size-s">
+			<div class="card-tit">
+				藍牙血糖機、血糖測試片
+				<div class="txt-status">店家接受預約</div>
+			</div>
+			<div class="txt">
+				商品數量：1台、3盒<br>
+				預約日期：2023/05/20<br>
+				預約店家名稱：弘康醫療儀器行<br>
+				電話號碼：04-22620215<br>
+				店家地址：台中市南區建國南路一段92號
+				
+			</div>
+		</div>
+		<!-- ========================== -->
+		<!-- ========================== -->
+		<!-- ========================== -->
+		<div class="card">
+			<div class="card-tit-h1 color-bk">
+				<div class="txt-status">店家確認中</div>
+				預約取貨
+			</div>
+			<div class="card size-s">
+				<small class="product-num">#1234567899</small>
+				<div class="card-tit">商品內容</div>
+				<div class="div-tb">
+					<div class="td">
+						<img src="inc/img/product/product-01-s.jpg" alt="">
+					</div>
+					<div class="td">
+						<div class="txt-product-name">藍牙血糖機 GM700SB</div>
+						<small class="txt-small">商品數量：1台</small>
+					</div>
+				</div>
+				<div class="div-tb">
+					<div class="td">
+						<img src="inc/img/product/product-02-s.jpg" alt="">
+					</div>
+					<div class="td">
+						<div class="txt-product-name">血糖測試片 GS700/盒(50片)</div>
+						<small class="txt-small">商品數量：3盒</small>
+					</div>
+				</div>
+				<div class="card-tit">取貨店家資訊</div>
+				<div class="div-tb">
+					<div class="td">
+						<img src="inc/img/product/product-empty-s.jpg" alt="">
+					</div>
+					<div class="td">
+						<div class="txt-product-name">弘康醫療儀器行</div>
+						<small class="txt-small">
+							04-22620215
+							台中市南區建國南路一段92號
+						</small>
+					</div>
+				</div>
+			</div>
+			<div class="txt-info-tit">注意事項</div>
+			<ul>
+				<li>若需修改預約單，請取消預約後重新下單！</li>
+			</ul>
+			<div class="card-footer">
+				<a class="btn btn-primary" href="javascript:void(0);" data-toggle="modal" data-target="#Modal-1">取消預約單</a>
+				<a class="btn btn-primary disabled" href="javascript:void(0);">取消預約單</a>
+			</div>
+		</div>
+    </div><!-- /page-content -->
+	<div class="modal" id="Modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">請選擇取消原因</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="div-tb">
+						<div class="td form-check">
+							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+							<label class="form-check-label" for="defaultCheck1">
+								等待過久
+							</label>
+						</div>
+						<div class="tdform-check">
+							<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+							<label class="form-check-label" for="defaultCheck2">
+								不需要了
+							</label>
+						</div>
+					</div>	
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+						<label class="form-check-label" for="defaultCheck3">
+							已到實體店面購買
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+						<label class="form-check-label" for="defaultCheck4">
+							想更改預約店家或商品內容
+						</label>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">送出</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
