@@ -10,6 +10,11 @@
   color: #8B8B8B;
 }
 
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .div-tb {
   display: table;
   width: 100%;
@@ -23,6 +28,10 @@
 }
 .div-tb .td:last-child {
   padding-right: 0;
+}
+
+.w-30per {
+  width: 30% !important;
 }
 
 .w-50per {
@@ -41,8 +50,25 @@ img {
   color: #8B8B8B;
 }
 
+.txt-status {
+  color: #1671FE;
+}
+
+.txt-phone {
+  display: block;
+}
+
+.product-num {
+  color: #8b8b8b;
+}
+
+.info-box .info-tit {
+  font-weight: bold;
+}
+
 .page {
   background: #E6E6E6;
+  font-size: 16px;
 }
 .page .page-content {
   position: relative;
@@ -50,6 +76,14 @@ img {
   padding: 0;
   max-width: 800px;
   margin: 0 auto;
+  min-height: 100vh;
+}
+.page .page-content.list-page, .page .page-content.confirm-page {
+  background: #E6E6E6;
+  padding: 70px 4% 0 4%;
+}
+.page .page-content.confirm-page {
+  background: #fff;
 }
 .page .page-content .page-header {
   z-index: 300;
@@ -92,7 +126,6 @@ img {
 .card {
   border: none;
   width: 100%;
-  padding: 4% 4% 0 4%;
 }
 .card .card-tit-h1,
 .card .card-tit-h2 {
@@ -101,12 +134,124 @@ img {
   color: #004F9C;
   margin: 10px 0;
 }
+.card .card-tit-h1.color-bk,
+.card .card-tit-h2.color-bk {
+  color: #1F1F1F;
+}
+.card .card-tit-h1 .txt-status,
+.card .card-tit-h2 .txt-status {
+  display: block;
+  font-weight: normal;
+  font-size: 13px;
+}
 .card .card-tit-h2 {
   font-size: 125%;
   color: #1F1F1F;
 }
 .card .txt-info {
   margin: 0 0 10px 0;
+}
+.card .card-body {
+  padding: 0 4%;
+}
+.card .card-footer {
+  padding: 6% 4% 4% 4%;
+  background: none;
+  border: none;
+}
+.card .card-footer .btn {
+  width: 100%;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 5px;
+  font-size: 125%;
+  font-weight: 400;
+  color: #004F9C;
+  border: 1px solid #004F9C;
+}
+.card .card-footer .btn.btn-primary {
+  color: #fff;
+  background: #004F9C;
+}
+.card .card-footer .btn.disabled {
+  opacity: 0.3;
+}
+.card.size-s {
+  padding: 4%;
+  border-radius: 10px;
+  margin-bottom: 4%;
+}
+.card.size-s .card-tit {
+  position: relative;
+  font-size: 110%;
+  color: #1F1F1F;
+  font-weight: bold;
+}
+.card.size-s .card-tit::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -4%;
+  height: 25px;
+  width: 4px;
+  background: #1671FE;
+}
+.card.size-s .card-tit .txt-status {
+  float: right;
+  font-weight: normal;
+  font-size: 80%;
+}
+.card.size-s .txt {
+  font-size: 13px;
+  padding: 3% 0 0 0;
+}
+.card .card.card-product {
+  position: relative;
+  padding: 4%;
+  border: 1px solid #D1D1D1;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+.card .card.card-product .product-num {
+  position: absolute;
+  right: 4%;
+  top: 2%;
+}
+.card .card.card-product .card-tit::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  height: 25px;
+  width: 4px;
+  background: #1F1F1F;
+}
+.card .card.card-product .div-tb .td {
+  vertical-align: top;
+}
+.card .card.card-product .div-tb .td .txt-product-name {
+  padding-top: 15px;
+}
+.card .card.card-product .div-tb .td .txt-small {
+  color: #8b8b8b;
+  line-height: normal;
+  display: block;
+}
+.card .card.card-product .div-tb .td img {
+  background: #D9D9D9;
+  height: 80px;
+  width: 90px;
+  border-radius: 5px;
+}
+.card .card.card-product .div-tb .td .store-map {
+  text-align: center;
+  background: #DEEBFF;
+  border-radius: 5px;
+}
+.card .card.card-product .div-tb .td .store-map img {
+  margin: 0 auto;
+  width: 60px;
+  background: none;
 }
 
 .form {
@@ -137,9 +282,10 @@ img {
   background: #F0F0F0 url(../img/icon/sel-arrow-down.png) no-repeat right center;
   background-size: 40px;
 }
-.form .form-group input[type=date] {
-  background: #F0F0F0 url(../img/icon/calendar.svg) no-repeat right center;
-  background-size: 40px;
+.form .form-group input[type=date],
+.form .form-group .form-control.date {
+  background: #F0F0F0 url(../img/icon/calendar.svg) no-repeat right center !important;
+  background-size: 40px !important;
 }
 .form .form-group ::-webkit-calendar-picker-indicator {
   display: none;

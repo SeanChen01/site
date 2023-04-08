@@ -1,11 +1,20 @@
 .page
     background: #E6E6E6
+    font-size: 16px
     .page-content
         position: relative
         background: #fff
         padding: 0
         max-width: 800px
         margin: 0 auto
+        min-height: 100vh
+        &.list-page,
+        &.confirm-page
+            background: #E6E6E6
+            padding: 70px 4% 0 4%
+        &.confirm-page
+            background: #fff
+        // --------------
         .page-header
             z-index: 300
             position: fixed
