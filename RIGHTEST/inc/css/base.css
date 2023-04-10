@@ -29,9 +29,16 @@
 .div-tb .td:last-child {
   padding-right: 0;
 }
+.div-tb.padd-0 .td {
+  padding: 5px 0;
+}
 
 .w-30per {
   width: 30% !important;
+}
+
+.w-20per {
+  width: 20% !important;
 }
 
 .w-50per {
@@ -46,8 +53,25 @@ img {
   width: 100%;
 }
 
+.lt {
+  text-align: left !important;
+}
+
+.ct {
+  text-align: center !important;
+}
+
+.rt {
+  text-align: right !important;
+}
+
+.vbtm {
+  vertical-align: bottom !important;
+}
+
 .txt {
   color: #8B8B8B;
+  line-height: normal;
 }
 
 .txt-status {
@@ -155,7 +179,7 @@ img {
   padding: 0 4%;
 }
 .card .card-footer {
-  padding: 6% 4% 4% 4%;
+  padding: 6% 1% 4% 1%;
   background: none;
   border: none;
 }
@@ -289,6 +313,38 @@ img {
 }
 .form .form-group ::-webkit-calendar-picker-indicator {
   display: none;
+}
+.form .form-group .txt-error {
+  color: #FF505F;
+  font-size: 90%;
+}
+.form .form-group .form-txt {
+  padding: 5px 0;
+  font-weight: bold;
+}
+.form .form-group .form-btn {
+  display: inline-block;
+  width: 75px;
+  vertical-align: bottom;
+  background: #1671FE;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  margin: 0;
+}
+.form .form-group .form-btn .icon-qrcode {
+  margin-top: 9px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/icon/qr-code.svg) no-repeat center center;
+  background-size: 35px;
+}
+
+.info-txt {
+  padding: 20px 0;
+  font-size: 80%;
+  color: #1F1F1F;
+  line-height: 20px;
 }
 
 * {
