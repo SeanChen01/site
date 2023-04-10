@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>RIGHTEST</title>
+    <link rel="shortcut icon" href="inc/img/favicon.png">
+	<meta property="og:image" content="https://seanchen01.github.io/site/inc/img/logo/og-1.jpg">
+    <!-- 共用JS star -->
+    <script type="text/javascript" src="inc/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="inc/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script type="text/javascript" src="inc/js/base.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="inc/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="inc/lib/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="inc/css/base.css">
+</head>
+
+<body class="page">
+    <div class="page-content">
+        <div class="page-header-img">
+			<img src="inc/img/layout/top-img.jpg" alt="">
+		</div>
+        <div class="card">
+			<div class="card-body">
+				
+                <div class="verification-box">
+                    <div class="txt ct">已將驗證碼發送到0912-***678</div>
+                    <strong class="txt ct">請輸入四位驗證碼</strong>
+                    <div class="input-box">
+                        <input type="text" value="7777">
+                    </div>
+                    <small class="txt ct">認證碼有效時間：299秒</small>
+                    <small class="txt ct">若超過一分鐘沒有收到認證碼？
+                        <a class="txt-link underline" href="javascript:void(0)">重新傳送</a>
+                    </small>
+                </div>
+                <div class="txt btm-info">0912-***678 
+                    <a class="txt-link" href="javascript:void(0)">不是你的電話號碼嗎？</a>
+                    
+                </div>
+            </div>
+			<div class="card-footer">
+				<a class="btn btn-primary" href="javascript:void(0);">認證</a>
+			</div>
+            <div class="demolink">
+                <a class="demo-toast1" href="javascript:void(0);">成功</a>
+                <a class="demo-toast2" href="javascript:void(0);">五分鐘</a>
+                <a class="demo-toast3" href="javascript:void(0);">失敗</a>
+            </div>
+
+            <div class="toast success" data-autohide="false">
+                <div class="toast-header">
+                    <i class="icon-check"></i>
+                </div>
+                <div class="toast-body">
+                    認證成功
+                </div>
+            </div>
+            <div class="toast wait" data-autohide="false">
+                <div class="toast-header">
+                    <i class="icon-alert"></i>
+                </div>
+                <div class="toast-body">
+                    請稍等五分後再試
+                </div>
+            </div>
+            <div class="toast fail" data-autohide="false">
+                <div class="toast-header">
+                    <i class="icon-alert"></i>
+                </div>
+                <div class="toast-body">
+                    認證失敗
+                </div>
+            </div>
+
+		</div>
+		
+    </div><!-- /page-content -->
+	<script>
+        $(document).ready(function(){
+            $(".demo-toast1").click(function(){
+                $('.toast.success').toast('show');
+            });
+            $(".demo-toast2").click(function(){
+                $('.toast.wait').toast('show');
+            });
+            $(".demo-toast3").click(function(){
+                $('.toast.fail').toast('show');
+            });
+        });
+    </script>
+</body>

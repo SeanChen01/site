@@ -44,6 +44,11 @@ img
 .txt
     color: #8B8B8B
     line-height: normal
+    &.btm-info
+        padding-top: 50px
+        color: #1F1F1F
+        text-align: center
+        margin-bottom: 20px
 .txt-status
     color: #1671FE
 .txt-phone
@@ -51,7 +56,46 @@ img
 .product-num
     color: #8b8b8b
 
+.txt-link
+    &.underline
+        text-decoration: underline
 // ===================
 .info-box
     .info-tit
         font-weight: bold
+
+.toast
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    background: #1F1F1F
+    width: 200px
+    height: 100px
+    z-index: 500
+    border-radius: 10px
+    .toast-header
+        text-align: center
+        background: none
+        border: none
+        padding-top: 5px
+        i
+            width: 40px
+            height: 40px
+            margin: 10px auto 0px auto
+            line-height: 40px
+            border-radius: 500px
+            &.icon-check
+                background: url(../img/icon/check.svg) no-repeat center center
+                background-size: 40px
+            &.icon-alert
+                background: url(../img/icon/alert.svg) no-repeat center center
+                background-size: 40px
+    .toast-body
+        padding: 5px 0 0 0
+        text-align: center
+        color: #fff
+
+.demolink
+    display: block
+    text-align: center

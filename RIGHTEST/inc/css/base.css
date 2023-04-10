@@ -73,6 +73,12 @@ img {
   color: #8B8B8B;
   line-height: normal;
 }
+.txt.btm-info {
+  padding-top: 50px;
+  color: #1F1F1F;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .txt-status {
   color: #1671FE;
@@ -86,8 +92,56 @@ img {
   color: #8b8b8b;
 }
 
+.txt-link.underline {
+  text-decoration: underline;
+}
+
 .info-box .info-tit {
   font-weight: bold;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #1F1F1F;
+  width: 200px;
+  height: 100px;
+  z-index: 500;
+  border-radius: 10px;
+}
+.toast .toast-header {
+  text-align: center;
+  background: none;
+  border: none;
+  padding-top: 5px;
+}
+.toast .toast-header i {
+  width: 40px;
+  height: 40px;
+  margin: 10px auto 0px auto;
+  line-height: 40px;
+  border-radius: 500px;
+}
+.toast .toast-header i.icon-check {
+  background: url(../img/icon/check.svg) no-repeat center center;
+  background-size: 40px;
+}
+.toast .toast-header i.icon-alert {
+  background: url(../img/icon/alert.svg) no-repeat center center;
+  background-size: 40px;
+}
+.toast .toast-body {
+  padding: 5px 0 0 0;
+  text-align: center;
+  color: #fff;
+}
+
+.demolink {
+  display: block;
+  text-align: center;
 }
 
 .page {
@@ -143,6 +197,68 @@ img {
   background: #004ea0;
 }
 
+.verification-box {
+  padding: 20px 10px;
+}
+.verification-box .txt {
+  display: block;
+  width: 100%;
+  color: #1F1F1F;
+  margin: 10px 0;
+  text-align: center;
+}
+.verification-box .input-box {
+  background: #F0F0F0;
+  padding: 10px 20px;
+  margin: 20px;
+  text-align: center;
+}
+.verification-box .input-box input {
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 30px;
+  width: 100%;
+}
+
+.modal-header {
+  position: relative;
+  border: none;
+}
+.modal-header .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal-header .close span {
+  font-size: 120%;
+  font-weight: normal;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+}
+.modal-header .modal-title {
+  width: 100%;
+}
+.modal-header .modal-title.ct {
+  text-align: center;
+}
+
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.modal-body p {
+  line-height: normal;
+  margin-bottom: 20px;
+  font-size: 90%;
+}
+.modal-body .tit {
+  font-weight: bold;
+  display: block;
+}
+
 .card-header {
   padding: 0;
   border-radius: 0;
@@ -179,7 +295,7 @@ img {
   padding: 0 4%;
 }
 .card .card-footer {
-  padding: 6% 1% 4% 1%;
+  padding: 6% 4% 4% 4%;
   background: none;
   border: none;
 }
