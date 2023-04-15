@@ -72,6 +72,7 @@ img {
 .txt {
   color: #8B8B8B;
   line-height: normal;
+  display: block;
 }
 .txt.btm-info {
   padding-top: 50px;
@@ -124,6 +125,7 @@ img {
   margin: 10px auto 0px auto;
   line-height: 40px;
   border-radius: 500px;
+  text-indent: -9999px;
 }
 .toast .toast-header i.icon-check {
   background: url(../img/icon/check.svg) no-repeat center center;
@@ -263,6 +265,21 @@ img {
   padding: 0;
   border-radius: 0;
 }
+.card-header.logo {
+  background: none;
+  border: none;
+  text-align: center;
+  color: #004F9C;
+  padding: 40px 0;
+}
+.card-header.logo img {
+  width: 280px;
+  margin: 5px;
+}
+.card-header.logo h1 {
+  font-size: 26px;
+}
+
 .card {
   border: none;
   width: 100%;
@@ -293,6 +310,9 @@ img {
 }
 .card .card-body {
   padding: 0 4%;
+}
+.card .card-body .form {
+  min-height: 250px;
 }
 .card .card-footer {
   padding: 6% 4% 4% 4%;
@@ -417,6 +437,7 @@ img {
   border: none;
   height: auto;
   border-bottom: 1px solid #8B8B8B;
+  margin-bottom: 3px;
 }
 .form .form-group .custom-select {
   background: #F0F0F0 url(../img/icon/sel-arrow-down.png) no-repeat right center;
@@ -432,7 +453,7 @@ img {
 }
 .form .form-group .txt-error {
   color: #FF505F;
-  font-size: 90%;
+  font-size: 14px;
 }
 .form .form-group .form-txt {
   padding: 5px 0;

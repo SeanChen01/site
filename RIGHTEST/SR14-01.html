@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>RIGHTEST</title>
+    <link rel="shortcut icon" href="inc/img/favicon.png">
+	<meta property="og:image" content="https://seanchen01.github.io/site/inc/img/logo/og-1.jpg">
+    <!-- 共用JS star -->
+    <script type="text/javascript" src="inc/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="inc/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script type="text/javascript" src="inc/js/base.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="inc/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="inc/lib/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="inc/css/base.css">
+</head>
+
+<body class="page">
+    <div class="page-content">
+        
+        <div class="card">
+			<div class="card-header logo">
+				<img class="logo" src="inc/img/logo/logo.svg" alt="">
+				<h1>店長身份認證專區</h1>
+			</div>
+			<div class="card-body">
+				
+				<div class="form">
+					<div class="form-group">
+						<label for="form-input">*店家代碼</label>
+						<div class="d-flex padd-0">
+							<input type="text" class="form-control" id="form-input" placeholder="請輸入TW開頭的店家代碼">
+							<a class="form-btn" href="javascript:void(0)">
+								<i class="icon-qrcode"></i>
+							</a>
+						</div>
+						<div class="txt-error">
+							查無此分店
+						</div>
+						<!-- <div class="form-txt">店家名稱：大樹連鎖藥局</div> -->
+					</div>
+					<div class="form-group">
+						<label for="form-input">*行動電話</label>
+						<input type="text" class="form-control" id="form-input" placeholder="請輸入TW開頭的店家代碼">
+						<div class="txt-error">
+							此門號非該分店登記之手機號碼，請確認您的分店
+							代碼是否正確。如欲變更分店手機號碼，請與業務
+							人員聯繫。
+						</div>
+					</div>
+				</div>
+				<div class="form-check ct">
+					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+					<label class="form-check-label" for="defaultCheck1">
+						記住店家代碼
+					</label>
+				</div>
+			</div>
+			<div class="card-footer">
+				<a class="btn btn-primary" href="SR14-02.html">登入</a>
+				<a class="btn btn-primary disabled" href="SR14-02.html">登入</a>
+			</div>
+		</div>
+		
+    </div><!-- /page-content -->
+	
+</body>

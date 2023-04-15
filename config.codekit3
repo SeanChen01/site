@@ -744,6 +744,69 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/RIGHTEST\/inc\/img\/icon\/alert.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/RIGHTEST\/inc\/img\/icon\/alert.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/RIGHTEST\/inc\/img\/icon\/calendar.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/RIGHTEST\/inc\/img\/icon\/calendar.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/RIGHTEST\/inc\/img\/icon\/check.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/RIGHTEST\/inc\/img\/icon\/check.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/RIGHTEST\/inc\/img\/icon\/map.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/RIGHTEST\/inc\/img\/icon\/map.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/RIGHTEST\/inc\/img\/icon\/qr-code.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/RIGHTEST\/inc\/img\/icon\/qr-code.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/RIGHTEST\/inc\/img\/icon\/sel-arrow-down.png" : {
+      "ft" : 32768,
+      "iS" : 3854,
+      "oA" : 0,
+      "oAP" : "\/RIGHTEST\/inc\/img\/icon\/sel-arrow-down.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/RIGHTEST\/inc\/img\/layout\/top-img.jpg" : {
       "ft" : 16384,
       "iS" : 101997,
@@ -767,12 +830,38 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/RIGHTEST\/inc\/img\/product\/product-01-s.jpg" : {
+      "ft" : 16384,
+      "iS" : 29117,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/RIGHTEST\/inc\/img\/product\/product-01-s.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/RIGHTEST\/inc\/img\/product\/product-01.jpg" : {
       "ft" : 16384,
       "iS" : 27591,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/RIGHTEST\/inc\/img\/product\/product-01.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/RIGHTEST\/inc\/img\/product\/product-02-s.jpg" : {
+      "ft" : 16384,
+      "iS" : 33163,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/RIGHTEST\/inc\/img\/product\/product-02-s.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -957,7 +1046,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/RIGHTEST\/inc\/sass\/layout\/_body.sass" : {
+    "\/RIGHTEST\/inc\/sass\/layout\/_card.sass" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -966,13 +1055,13 @@
       "ft" : 2,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_body.css",
+      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_card.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/RIGHTEST\/inc\/sass\/layout\/_footer.sass" : {
+    "\/RIGHTEST\/inc\/sass\/layout\/_comm.sass" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -981,13 +1070,13 @@
       "ft" : 2,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_footer.css",
+      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_comm.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/RIGHTEST\/inc\/sass\/layout\/_header.sass" : {
+    "\/RIGHTEST\/inc\/sass\/layout\/_form.sass" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -996,13 +1085,13 @@
       "ft" : 2,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_header.css",
+      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_form.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/RIGHTEST\/inc\/sass\/layout\/_mobile.sass" : {
+    "\/RIGHTEST\/inc\/sass\/layout\/_page.sass" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1011,22 +1100,7 @@
       "ft" : 2,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_mobile.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/RIGHTEST\/inc\/sass\/layout\/_var.sass" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 2,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_var.css",
+      "oAP" : "\/RIGHTEST\/inc\/sass\/layout\/_page.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1038,6 +1112,46 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/RIGHTEST\/index.html",
+      "oF" : 0
+    },
+    "\/RIGHTEST\/member.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/RIGHTEST\/member.html",
+      "oF" : 0
+    },
+    "\/RIGHTEST\/registration-page1.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/RIGHTEST\/registration-page1.html",
+      "oF" : 0
+    },
+    "\/RIGHTEST\/registration-page2.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/RIGHTEST\/registration-page2.html",
+      "oF" : 0
+    },
+    "\/RIGHTEST\/store-confirm.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/RIGHTEST\/store-confirm.html",
+      "oF" : 0
+    },
+    "\/RIGHTEST\/store-list.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/RIGHTEST\/store-list.html",
       "oF" : 0
     },
     "\/workspace.code-workspace" : {
