@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?e0lysf');
-  src:  url('fonts/icomoon.eot?e0lysf#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?e0lysf') format('truetype'),
-    url('fonts/icomoon.woff?e0lysf') format('woff'),
-    url('fonts/icomoon.svg?e0lysf#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fidm2l');
+  src:  url('fonts/icomoon.eot?fidm2l#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fidm2l') format('truetype'),
+    url('fonts/icomoon.woff?fidm2l') format('woff'),
+    url('fonts/icomoon.svg?fidm2l#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ticket-bg:before {
+  content: "\ea1c";
+  color: #53d49f;
+}
+.icon-cake:before {
+  content: "\ea1a";
+  color: #fbc12d;
+}
+.icon-party:before {
+  content: "\ea1b";
+  color: #53d49f;
+}
 .icon-activity:before {
   content: "\e900";
 }
