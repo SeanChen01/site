@@ -450,6 +450,9 @@ img {
   font-size: 20px;
   margin-bottom: 15px;
 }
+.ticket-info .ticket-tit i {
+  font-size: 120%;
+}
 .ticket-info .tit {
   font-weight: bold;
   color: #1F1F1F;
